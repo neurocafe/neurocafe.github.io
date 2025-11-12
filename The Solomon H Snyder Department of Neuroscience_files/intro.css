@@ -1,0 +1,123 @@
+@import url("/bundles/jhopkins/fonts/fonts.css");
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  background: #1a1a1a;
+  /*background: black;*/ /* TODO remove me */
+  overflow: hidden;
+}
+#animcontainer {
+  background: #1a1a1a;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -500px;
+  height: 1000px;
+  margin-left: -950px;
+  width: 1900px;
+}
+
+.logo {
+  background: url("img/logo.png") no-repeat;
+  position: absolute;
+  width: 860px;
+  left: 520px;
+  height: 152px;
+  top: 424px;
+  opacity: 0;
+}
+.logo {
+  background: url("img/logo.png") no-repeat;
+  position: absolute;
+  width: 860px;
+  left: 520px;
+  height: 152px;
+  top: 424px;
+}
+.logo2 {
+  background: url("img/logo2.png") no-repeat;
+  position: absolute;
+  width: 1200px;
+  left: 350px;
+  height: 256px;
+  top: 372px;
+  opacity: 0;
+}
+.dotcontainer,
+.dotcontainer2,
+.dotcontainer3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1900px;
+  height: 1000px;
+}
+.dot {
+  position: absolute;
+  border-radius: 50%;
+}
+.connection {
+  position: absolute;
+  height: 1px;
+}
+
+.clone {
+  opacity: 0;
+  background: url("img/complete.png") no-repeat 50% 50%;
+  width: 1900px;
+  height: 1000px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.brain {
+  background: url("img/brain.png") no-repeat 50% 50% #1a1a1a;
+  width: 1900px;
+  height: 1000px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.0001;
+}
+ul.text li {
+  list-style: none;
+  font-family: "Montserrat",sans-serif;
+  position: absolute;
+  width: 1900px;
+  left: 0;
+  line-height: 150px;
+  height: 150px;
+  top: 425px;
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  font-size: 50px;
+}
+ul.text li>span {
+  opacity: 0;
+}
+ul.text li>span.rich {
+  display: inline-block;
+}
+u {
+  text-decoration: none;
+  border-bottom: 2px solid white;
+  padding-bottom: 6px;
+  vertical-align: baseline;
+}
+.arrow {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -20px;
+}
+.arrow a {
+  display: block;
+}
+.arrow img {
+  display: block;
+  width: 40px;
+  height: 24px;
+}
