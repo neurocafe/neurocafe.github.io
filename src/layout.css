@@ -1,0 +1,2666 @@
+@import url("fonts/fonts.css");
+@import url("mobile.css?v=2") (max-width:767px);
+@import url("res.css?v=1") (max-width: 1220px) and (min-width: 768px);
+@import url("res1000.css?v=2") (max-width: 1024px) and (min-width: 768px);
+@import url("pad.css?v=1") (max-width:768px) and (min-width: 520px);
+@import url("res1300.css?v=1") (max-width:1300px) and (min-width: 1025px);
+
+/*
+Edited YUI CSS Reset
+
+Copyright (c) 2011, Yahoo! Inc. All rights reserved. Code licensed under the BSD License: http://developer.yahoo.com/yui/license.html, version: 2.9.0
+*/
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,button,caption,cite,code,dfn,em,input,optgroup,option,select,strong,textarea,th,var{font:inherit}del,ins{text-decoration:none}li{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:baseline}sub{vertical-align:baseline}legend{color:#000}a{color:inherit;text-decoration:none}header,footer,section,nav{display:block}
+
+html, body {
+/*   height: 100%; */
+  background: #1a1a1a;
+/*   background: gray; */
+  color: white;
+  font-family: "Montserrat". sans-serif;
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  position: relative;
+}
+#introanimation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #1a1a1a;
+  border: 0;
+}
+.pagecontainer {
+  background: #1a1a1a;
+  position: relative;
+}
+
+.outercontainer {
+  width: 100%;
+  overflow: hidden;
+  min-width: 1000px;
+}
+.innercontainer {
+  width: 100%;
+  max-width: 1480px;
+  min-width: 1000px;
+  background: #1a1a1a;
+  margin: 0 auto;
+}
+.content {
+  position: relative;
+}
+.content.homecontent,
+.content.map {
+  position: relative;
+  background: #1a1a1a;
+}
+.s1p {
+  width: 8.33%;
+  box-sizing: border-box;
+}
+.s2p {
+  width: 16.66%;
+  box-sizing: border-box;
+}
+.s3p {
+  width: 24.99%;
+  box-sizing: border-box;
+}
+.s4p {
+  width: 33.32%;
+  box-sizing: border-box;
+}
+.s5p {
+  width: 41.65%;
+  box-sizing: border-box;
+}
+.s6p {
+  width: 49.99%;
+  box-sizing: border-box;
+}
+.s7p {
+  width: 58.33%;
+  box-sizing: border-box;
+}
+.s8p {
+  width: 66.66%;
+  box-sizing: border-box;
+}
+.s9p {
+  width: 74.99%;
+  box-sizing: border-box;
+}
+.s10p {
+  width: 83.33%;
+  box-sizing: border-box;
+}
+.s11p {
+  width: 91.66%;
+  box-sizing: border-box;
+}
+.s12p {
+  width: 100%;
+  box-sizing: border-box;
+}
+.ml1p {
+  margin-left: 8.33%;
+}
+.ml2p {
+  margin-left: 16.66%;
+}
+.ml3p {
+  margin-left: 24.99%;
+}
+.ml4p {
+  margin-left: 33.32%;
+}
+.ml5p {
+  margin-left: 41.65%;
+}
+.ml6p {
+  margin-left: 49.99%;
+}
+.ml7p {
+  margin-left: 58.33%;
+}
+.ml8p {
+  margin-left: 66.66%;
+}
+.ml9p {
+  margin-left: 74.99%;
+}
+.ml10p {
+  margin-left: 83.33%;
+}
+.ml11p {
+  margin-left: 91.66%;
+}
+.mr1p {
+  margin-right: 8.33%;
+}
+.mr2p {
+  margin-right: 16.66%;
+}
+.mr3p {
+  margin-right: 24.99%;
+}
+.mr4p {
+  margin-right: 33.32%;
+}
+.mr5p {
+  margin-right: 41.65%;
+}
+.mr6p {
+  margin-right: 49.99%;
+}
+.mr7p {
+  margin-right: 58.33%;
+}
+.mr8p {
+  margin-right: 66.66%;
+}
+.mr9p {
+  margin-right: 74.99%;
+}
+.mr10p {
+  margin-right: 83.33%;
+}
+.mr11p {
+  margin-right: 91.66%;
+}
+.pl1p {
+  padding-left:  8.33%;
+}
+.pr1p {
+  padding-right:  8.33%;
+}
+.fleft {
+  float: left;
+}
+.clear {
+  clear: both;
+}
+.ohiden {
+  overflow: hidden;
+}
+.colteal {
+  background: #009191;
+}
+.colviolet {
+  background: #6d0d6e;
+}
+.colyellow {
+  background: #9e9605;
+}
+.colblue {
+  background: #174799;
+}
+.colwhite {
+  background: white;
+  color: black;
+}
+.facultylist .colteal .imgcontainer .overlay {
+  background: #009191;
+}
+.facultylist .colviolet .imgcontainer .overlay {
+  background: #6d0d6e;
+}
+.facultylist .colyellow .imgcontainer .overlay {
+  background: #9e9605;
+}
+.facultylist .colblue .imgcontainer .overlay {
+  background: #174799;
+}
+.facultylist .colwhite .imgcontainer .overlay {
+  background: white;
+  color: black;
+}
+.relative {
+  position: relative;
+}
+.zindexgroup {
+  z-index: 0;
+}
+a.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+header .logo {
+  width: 156px;
+  height: 60px;
+  background: url("nbic_logo.png") no-repeat;
+  background-size: 156px 56px;
+}
+header .sologo {
+  width: 156px;
+  height: 56px;
+  background: url("neurocafe_logo.png") no-repeat;
+  background-size: 156px 56px;
+}
+header .logotop {
+  height: 98px;
+}
+header .logotop a {
+  overflow: hidden;
+  display: block;
+  text-indent: -10000px;
+}
+header .logotop h1 {
+  float: right;
+  padding-top: 35px;
+}
+header .logotop p {
+  padding-top: 22px;
+}
+header nav {
+  font-family: "Inconsolata", fixed;
+  height: 45px;
+  letter-spacing: 0.1em;
+}
+header nav.large {
+  padding: 5px 0;
+}
+header nav>ul {
+  position: relative;
+  height: 40px;
+}
+header nav>ul>li {
+  float: left;
+  font-size: 12px;
+  margin-left: 40px;
+}
+header nav>ul>li:first-child {
+  margin-left: 0;
+}
+header nav>ul>li>a {
+/*   color: #838686; */
+  color: #acaeae;
+  text-transform: uppercase;
+  line-height: 40px;
+  display: block;
+  letter-spacing: 0.15em;
+}
+header nav>ul>li.active>a {
+  color: white;
+}
+header nav>ul>li:hover>a {
+  color: white;
+}
+header nav>ul>li>div {
+  position: absolute;
+  background: #1a1a1a;
+  left: 0;
+  top: 40px;
+  width: 100%;
+  z-index: 11;
+  overflow: hidden;
+/*   background: #222; */
+/*   padding: 20px 0 24px; */
+  padding: 20px 10% 24px;
+  margin: 0 -10%;
+  display: none;
+  border-top: 1px solid #313131;
+}
+header nav>ul>li:hover>div,
+header nav>ul>li.toggled>div {
+  display: block;
+}
+header nav>ul>li>div>div {
+  overflow: hidden;
+}
+header nav>ul div>ul {
+  padding-left: 20px;
+  float: left;
+  border-left: 1px solid #313131;
+  min-height: 100%;
+  margin-left: 40px;
+  padding-bottom: 1000px;
+  margin-bottom: -1000px;
+}
+header nav>ul div>ul:first-child {
+  margin-left: 0;
+}
+header nav>ul div>ul>li {
+  padding-top: 10px;
+}
+header nav>ul div>ul>li:first-child {
+  padding-top: 0;
+}
+header nav>ul div>ul>li>a {
+  text-transform: uppercase;
+  color: #CACACA;
+}
+header nav>ul div>ul>li>a:hover {
+  color: white;
+}
+header nav>ul div ul ul {
+  padding-left: 13px;
+}
+header nav>ul div ul ul>li {
+  padding-top: 10px;
+}
+header nav>ul div ul ul>li>a {
+  color: #cacaca;
+}
+header nav>ul div ul li ul>li >a:hover {
+  color: white;
+}
+header nav .mobilemenu {
+  display: none;
+}
+header .search {
+  float: right;
+  position: relative;
+  z-index: 10;
+  margin-top: -1px;
+}
+header .search form {
+  margin-top: -2px;
+}
+header .search input {
+  height: 30px;
+  margin-top: 1px;
+  font-size: 12px;
+  color: #868686;
+  background: #1a1a1a;
+  border: none;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 0.1em;
+}
+header .search input::-webkit-input-placeholder { color: #838686; }
+header .search input:-moz-placeholder { color: #838686; opacity: 1; }
+header .search input::-moz-placeholder { color: #838686; opacity: 1; }
+header .search input:-ms-input-placeholder { color: #838686; }
+header .search button {
+  display: inline-block;
+  background: url("img/hficons.png") top right no-repeat #1a1a1a;
+  background-size: 85px 34px;
+  height: 17px;
+  width: 17px;
+  margin-top: 11px;
+  overflow: hidden;
+  text-indent: -10000px;
+  border: none;
+}
+header .search:hover button {
+  background-position: bottom right;
+}
+.footer-spacer {
+  position: relative;
+  height: 87px;
+  padding-bottom: 60px;
+}
+.footer-wrapper {
+  background: #1a1a1a;
+  height: 87px;
+  position: absolute;
+  padding-bottom: 60px;
+  overflow: hidden;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+}
+footer {
+  position: relative;
+  z-index: 1;
+  height: 87px;
+  background: #1a1a1a;
+  font-size: 12px;
+  font-family: "Inconsolata", fixed;
+  letter-spacing: 0.1em;
+}
+footer .tools {
+  float: right;
+  height: 24px;
+  line-height: 24px;
+  padding-top: 38px;
+}
+footer .tools p {
+  float: left;
+  margin-left: 40px;
+  text-transform: uppercase;
+}
+.headcontent nav a i,
+footer .tools i {
+  display: inline-block;
+  background: url("img/hficons.png") no-repeat;
+  background-size: 85px 34px;
+  width: 17px;
+  height: 17px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.headcontent nav a i.login,
+footer .tools i.login {
+  background-position: -34px 0px;
+}
+footer .tools i.top {
+  background-position: -51px 0px;
+}
+footer .social {
+  float: left;
+  width: 17px;
+  overflow: hidden;
+  padding-top: 14px;
+}
+footer .social a {
+  overflow: hidden;
+  display: block;
+  width: 17px;
+  height: 17px;
+  background: url("img/hficons.png") no-repeat;
+  background-size: 85px 34px;
+  text-indent: -10000px;
+}
+footer .social a.fb {
+  margin-top: 17px;
+  background-position: -17px 0;
+}
+footer .info {
+  margin-left: 19px;
+  padding-top: 14px;
+  line-height: 18px;
+  float: left;
+}
+.hhimg {
+  overflow: hidden;
+}
+.half {
+  width: 50%;
+  float: left;
+}
+.hhimg .half {
+  padding-top: 50%;
+  position: relative;
+}
+.hhimg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.hhimg ul {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.hhimg li {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 44px;
+  text-transform: uppercase;
+/*   margin: 50px 0; */
+  padding: 50px 0;
+}
+h2 a {
+  color: #838686;
+  font-family: "Inconsolata", fixed;
+  font-weight: normal;
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: none;
+  margin-left: 26px;
+  padding-right: 26px;
+  background: url("img/arrowr.png") no-repeat 100% 50%;
+  background-size: 15px 11px;
+  transition: .5s;
+  letter-spacing: 0.1em;
+}
+h2 a:hover {
+  padding-right: 52px;
+}
+.hmembers {
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+.hmembers li {
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
+.hmembers .img img {
+  width: 100%;
+  display: block;
+  transform: scale(1.1);
+  transition: .5s;
+}
+.hmembers li:hover .img img,
+.hmembers li.hover .img img {
+  transform: scale(1);
+}
+.hmembers .info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 330px;
+/*   background: #9e9605; */
+  transition: .3s;
+  opacity: 0;
+}
+.hmembers .info.primary {
+  opacity: 1;
+}
+.hmembers li.hover .info,
+.hmembers li:hover .info {
+  opacity: 1;
+}
+.hmembers li.hover .info.colyellow,
+.hmembers li:hover .info.colyellow {
+  background: rgba(158,150,5,0.5);
+}
+.hmembers li.hover .info.colviolet,
+.hmembers li:hover .info.colviolet {
+  background: rgba(109,13,110,0.5);
+}
+.hmembers li.hover .info.colteal,
+.hmembers li:hover .info.colteal {
+  background: rgba(0,145,145,0.5);
+}
+.hmembers li.hover .info.colblue,
+.hmembers li:hover .info.colblue {
+  background: rgba(23,71,153,0.5);
+}
+.hmembers .infocontainer {
+  display: inline-block;
+  line-height: 18px;
+  vertical-align: middle;
+  margin: 0 24px;
+}
+.hmembers .info span {
+  display: block;
+}
+.hmembers .info span.quote {
+  font-family: "Inconsolata", serif;
+  font-size: 26px;
+/*   margin: 15px 0 5px; */
+  margin: 0 -5px;
+  margin: 0;
+  letter-spacing: 0.1em;
+  display: inline-block;
+}
+.hmembers .info span.qbody {
+  font-size: 18px;
+  line-height: 28px;
+  display: inline;
+}
+.hmembers .info span.name {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+.hmembers .info span.title {
+  font-size: 12px;
+  margin-top: 8px;
+}
+.hcalcontainer,
+.hnewscontainer {
+  margin-bottom: 16px;
+}
+.hnewscontainer {
+  margin-left: 50%;
+  position: relative;
+  padding-top: 50%;
+}
+.hnewscontainer .imgcontainer {
+  position: absolute;
+  width: 100%;
+  left: -100%;
+  top: 0;
+  z-index: 1;
+}
+.hnewscontainer .imgcontainer>div {
+  line-height: 1px;
+  overflow: hidden;
+}
+.hnewscontainer .imgcontainer>div>img {
+  width: 100%;
+  transform: scale(1.1);
+  transition: .5s;
+}
+.hnewscontainer .imgcontainer:hover>div>img {
+  transform: scale(1);
+}
+.hnewscontainer .newsentry {
+  margin-top: -100%;
+  vertical-align: middle;
+  margin-left: 10%;
+}
+.hnewscontainer .newsentry>div {
+  line-height: normal;
+  display: inline-block;
+  vertical-align: middle;
+}
+.hnewscontainer .newsentry date {
+  color: #838686;
+  font-family: "Inconsolata", serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.hnewscontainer .newsentry h3 {
+  color: #fffefe;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 5px 0 15px;
+}
+.hnewscontainer .newsentry .lnkmore {
+  color: #cacaca;
+  font-family: "Inconsolata", fixed;
+  font-weight: normal;
+  font-size: 12px;
+  display: inline-block;
+/*   vertical-align: middle; */
+  text-transform: none;
+  margin-left: 0px;
+  margin-top: 8px;
+  padding: 6px 15px;
+  border: 1px solid #868686;
+  text-transform: uppercase;
+  width: auto;
+  letter-spacing: 0.1em;
+}
+
+.hcity {
+  overflow: hidden;
+}
+.hcity li {
+/*   height: 428px; */
+  overflow: hidden;
+  position: relative;
+}
+.hcity .img {
+  z-index: 1;
+}
+.hcity .img img {
+  display: none;
+  width: 100%;
+/*   height: 428px; */
+  margin: 0 auto;
+  transform: scale(1.1);
+  transition: 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.hcity .img:hover img {
+  transform: scale(1);
+}
+.hcity .img img:first-child {
+  display: block;
+  position: static;
+}
+.hcity .info {
+  text-align: center;
+  font-family: "Montserrat", serif;
+  line-height: 214px;
+}
+.hcity .infocc {
+  display: none;
+}
+.hcity .infocc:first-child {
+  display: block;
+}
+.hcity .infocontainer {
+  line-height: 18px;
+  margin: auto 34px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.hcity .info span {
+  display: block;
+}
+.hcity .info span.quote {
+  font-family: "Inconsolata", serif;
+  font-size: 26px;
+  margin: 15px 0 5px;
+  letter-spacing: 0.1em;
+}
+.hcity .info span.qbody {
+  font-size: 18px;
+  line-height: 28px;
+}
+.hcity .info span.name {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.hcity .info span.title {
+  font-size: 12px;
+  margin-top: 8px;
+}
+.hcity .fulloverlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%}
+
+
+.subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: -40px;
+  color: #cacaca;
+  line-height: 28px;
+}
+.storypos {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  line-height: 24px;
+}
+.filters {
+  float: right;
+  width: 36%;
+/*   height: 70px; */
+/*   background: black; */
+  padding-top: 8px;
+  font-family: "Inconsolata", fixed;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  position: relative;
+}
+.filters a {
+  display: block;
+}
+.filters>div {
+  height: 28px;
+  position: relative;
+  float: left;
+}
+.filters .faculty {
+  width: 26%;
+}
+.filters .research {
+  width: 74%;
+}
+.filters>div .ddlist {
+  position: absolute;
+  width: 100%;
+  top: 28px;
+  border: 1px solid #cacaca;
+  border-top: 0px none;
+  box-sizing: border-box;
+  background: #1a1a1a;
+  padding: 5px 0;
+  display: none;
+  z-index: 5;
+  overflow: hidden;
+}
+.filters.alopen>div .ddlist {
+  display: block;
+  z-index: 1;
+}
+.filters>div.shown .ddlist {
+  display: block;
+}
+.filters.alopen>div.notshown .ddlist {
+  display: none;
+}
+.filters>div .ddlist li {
+/*   height: 24px; */
+/*   padding: 3px 0; */
+  color: #cacaca;
+}
+.filters>div .ddlist li a {
+  padding: 3px 8px 3px 34px;
+  line-height: 16px;
+  background: url("img/ddcheckbox.png") no-repeat 10px -115px;
+  background-size: 18px 136px;
+/*   height: 18px; */
+}
+.filters>div .ddlist li.selected a {
+  text-transform: uppercase;
+  color: white;
+  background-position: 10px 3px;
+  text-decoration: underline;
+}
+
+.filter .ddlist {
+  position: absolute;
+  width: 350px;
+  top: 30px;
+  border: 1px solid #cacaca;
+  border-top: 0px none;
+/*   box-sizing: border-box; */
+  background: #174799;
+  padding: 5px 0;
+  display: none;
+  z-index: 5;
+  overflow: hidden;
+  font-size: 12px;
+}
+.filter:hover .ddlist {
+  display: block;
+}
+.filter.directory .ddlist {
+  display: none;
+}
+.filter .ddlist li {
+  height: 24px;
+  color: #cacaca;
+}
+.filter .ddlist ul {
+  float: left;
+}
+.filter .ddlist li a {
+  padding: 3px 18px;
+  line-height: 18px;
+  height: 18px;
+  display: block;
+}
+.filter .ddlist li.selected a {
+  text-transform: uppercase;
+  color: white;
+}
+
+.addoncontacts {
+  overflow: hidden;
+}
+.addoncontacts li {
+  width: 46%;
+  float: left;
+}
+.textcontent .addoncontacts h3 {
+  text-transform: none;
+}
+.addoncontacts li:nth-child(2n) {
+  margin-left: 8%;
+}
+.filter {
+  position: relative;
+}
+.filter>a.filter, 
+.filters>div>a {
+  border-top: 1px solid #cacaca;
+  border-bottom: 1px solid #cacaca;
+  height: 26px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #cacaca;
+  display: block;
+  border-left: 1px solid #cacaca;
+  background: url("img/ddarrows.png") no-repeat;
+  background-size: 10px 100px;
+}
+.filters>div.faculty>a {
+  padding-left: 18%;
+  background-position: 92% 8px;
+}
+.filters>div.research>a {
+  padding-left: 5.6%;
+  background-position: 97% 8px;
+  border-right: 1px solid #cacaca;
+}
+.filters>div.faculty.shown>a {
+  background-position: 92% -82px;
+}
+.filters>div.research.shown>a {
+  background-position: 97% -82px;
+}
+.filters form {
+/*   float: right; */
+  position: absolute;
+  right: 0;
+  bottom: -35px;
+}
+.filters form input {
+  height: 30px;
+  margin-top: 5px;
+  font-size: 12px;
+  color: white;
+  background: #1a1a1a;
+  border: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.filters form button {
+  display: inline-block;
+  background: url("img/qloop.png?v=1") top right no-repeat #1a1a1a;
+  background-size: 17px 17px;
+  height: 17px;
+  width: 17px;
+  margin-top: 11px;
+  overflow: hidden;
+  text-indent: -10000px;
+  border: none;
+}
+.filters.news form {
+  background: #1a1a1a;
+  padding: 0 10px 5px;
+}
+.facultylist {
+  overflow: hidden;
+  margin: 50px 0;
+}
+.facultylist.notop {
+  margin-top: 0;
+}
+.facultylist li {
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+  font-family: "Inconsolata", fixed;
+  font-size: 12px;
+  float: left;
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hmembers li>a,
+.facultylist li>a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.facultylist li.hiddenfaculty {
+  display: none;
+}
+.facultylist li.hiddenresearch {
+  display: none;
+}
+.facultylist li .imgcontainer {
+  position: relative;
+  float: left;
+  width: 33%;
+}
+.facultylist li img {
+  display: block;
+  width: 100%;
+}
+.facultylist li .imgcontainer .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  display: none;
+}
+.facultylist li:hover .imgcontainer .overlay {
+  display: block;
+}
+.facultylist.studentlist li:hover .imgcontainer .overlay {
+  display: none;
+}
+.facultylist .infocontainer {
+  display: inline-block;
+  line-height: 22px;
+  line-height: 17px;
+  vertical-align: middle;
+  width: 60%;
+  padding: 0 2.25%;
+}
+.facultylist .infocontainer span {
+  display: block;
+}
+.facultylist .infocontainer span.name,
+.facultylist .infocontainer span.title {
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+.facultylist .infocontainer span em {
+  font-style: italic;
+}
+.facultylist .infocontainer span strong {
+  font-weight: bold;
+}
+.facultylist .infocontainer a {
+  text-decoration: underline;
+}
+.facultylist .left .infocontainer {
+/*   margin-left: 33%; */
+}
+.facultylist .right .infocontainer {
+/*   margin-right: 33%; */
+}
+.facultylist .right .imgcontainer {
+  float: right;
+  order: 1;
+}
+.facultylist .right {
+  text-align: right;
+}
+.headpic {
+  margin-bottom: -6.25%;
+  overflow: hidden;
+  min-height: 75px;
+}
+.headpic img {
+  display: block;
+  width: 100%;
+}
+.textcontent {
+  position: relative;
+  padding-left: 8.33%;
+}
+.textcontentcontainer {
+  padding: 1px 0 50px;
+  margin-right: 34.85%;
+  position: relative;
+}
+.textcontentcontainer.wide {
+  margin-right: 11.111%;
+}
+.textcontent .subtitle {
+  color: white;
+}
+.textcontent h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.textcontent h3.fellowship {
+  color: black;
+}
+.textcontent p.storyheading {
+  margin-top: 40px;
+}
+.textcontent .newsmainimg {
+  display: block;
+  margin: 0 auto 10px;
+}
+.textcontent .newsmainimg.tall {
+  max-height: 550px;
+  max-width: 100%;
+  width: auto;
+  
+}
+.textcontent .txt {
+  font-size: 12px;
+  color: #cacaca;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  margin: 20px 0;
+  font-family: "Montserrat", sans-serif;
+}
+.textcontent .txt p {
+  margin: 20px 0;
+}
+.textcontent .txt.formerlab table {
+  width: 100%;
+}
+.textcontent .txt.formerlab table td {
+  padding-right: 10px;
+}
+.textcontent .txt td>p,
+.textcontent .txt th>p {
+  margin: 0;
+}
+.colyellow .textcontent .txt {
+  color: white;
+}
+.hr {
+  height: 1px;
+  clear: both;
+  border-bottom: 1px solid #cacaca;
+}
+.colteal .hr {
+  border-bottom: 1px solid #1e9a9b;
+}
+.colviolet .hr {
+  border-bottom: 1px solid #7c267d;
+}
+.colwhite .hr {
+  border-bottom: 1px solid #e4e4e4;
+}
+.coldgray .hr {
+  border-bottom: 1px solid #313131;
+}
+.colyellow .hr {
+  border-bottom: 1px solid #a8a11e;
+}
+.colblue .hr {
+  border-bottom: 1px solid #113778;
+}
+.textcontent figure {
+  background: white;
+  padding: 20px;
+  color: black;
+  margin: 0;
+  margin-right: -50%;
+/*   margin-right: -40px; */
+}
+.textcontent figure.fullpic {
+  padding: 0 0 20px;
+}
+.textcontent figure img {
+  width: 100%;
+  max-width: 530px;
+}
+.textcontent figure iframe {
+/*   max-width: 100%; */
+}
+.textcontent figure.fullpic img {
+  width: 100%;
+}
+.textcontent .textcontentcontainer.wide figure {
+  margin-right: -17%;
+}
+.textcontent figcaption {
+  padding-right: 23%;
+  padding-left: 7%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: underline;
+  max-width: 430px;
+  font-size: 12px;
+  font-family: "Inconsolata", fixed;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+}
+.headmap {
+  margin-bottom: -6.25%;
+  overflow: hidden;
+  height: 590px;
+  background: #eee;
+  background-size: 134%;
+}
+.textcontent .quoteoutercontainer {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+.textcontent .quoteoutercontainer .quotecontainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  vertical-align: middle;
+  margin: 0;
+}
+.textcontent .quoteoutercontainer .quotecontainer .fh {
+  vertical-align: middle;
+  height: 100%;
+  width: 1%;
+  display: inline-block;
+}
+.textcontent .quoteoutercontainer .quotecontainer .quotecontainer2 {
+  width: 99%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.textcontent .quoteoutercontainer .quotecontainer:first-child {
+  display: block;
+}
+.textcontent .quotecontainer {
+  text-align: center;
+  margin: 20px 0;
+}
+.textcontent .quotecontainer p span {
+  display: inline;
+}
+.textcontent .quotecontainer span {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+}
+.textcontent .quotecontainer span.quote {
+  font-family: "Inconsolata", serif;
+  font-size: 26px;
+/*   margin: 15px 0 5px; */
+  letter-spacing: 0.1em;
+  display: inline-block;
+}
+.textcontent .quotecontainer span.qbody {
+  font-size: 18px;
+  line-height: 28px;
+  display: inline;
+}
+.textcontent .quotecontainer span.qbody p {
+  display: inline;
+}
+.textcontent .quotecontainer span.qbody a {
+  text-decoration: underline;
+}
+.textcontent .quotecontainer span.name {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+.textcontent .quotecontainer span.name.faded {
+  opacity: 0.6;
+}
+.textcontent .quotecontainer span.title {
+  font-size: 12px;
+  margin-top: 8px;
+}
+.textcontent .quotecontainer span.pinfo {
+  font-size: 12px;
+  margin-top: 8px;
+  opacity: 0.6;
+  font-family: "Inconsolata", fixed;
+  letter-spacing: 0.1em;
+}
+.trilist {
+  overflow: hidden;
+  background: white;
+}
+.trilist li .info {
+  padding: 40px;
+  border-right: 1px solid #f6fbfb;
+  border-left: 1px solid #f6fbfb;
+}
+.trilist li img {
+  display: block;
+  width: 100%;
+}
+.trilist {
+  color: #009191;
+  text-align: center;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+}
+.txtyellow .trilist {
+  color: #9e9605;
+}
+.trilist h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.trilist p {
+  margin-bottom: 20px;
+  line-height: 22px;
+}
+.trilist .more {
+  color: #838686;
+  font-family: "Inconsolata", fixed;
+  font-weight: normal;
+  font-size: 12px;
+  display: inline-block;
+/*   vertical-align: middle; */
+  text-transform: none;
+  margin-left: 26px;
+  padding-right: 26px;
+  background: url("img/arrowr.png") no-repeat 100% 50%;
+  background-size: 15px 11px;
+  line-height: 22px;
+  transition: .5s;
+  letter-spacing: 0.1em;
+}
+.trilist .more:hover {
+  padding-right: 52px;
+}
+aside.menu.nomtop {
+  margin-top: 30px;
+}
+aside.menu h5 {
+  color: #cacaca;
+  margin: 50px 0 30px;
+}
+aside.menu {
+  float: right;
+  margin-top: 8%;
+  text-align: right;
+  font-family: "Inconsolata", fixed;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding-left: 8px;
+  z-index: 1;
+  position: relative;
+  letter-spacing: 0.1em;
+}
+aside.menu li {
+  margin-bottom: 12px;
+}
+aside.menu li.active {
+}
+aside.menu.txtteal li.active {
+  color: #009191;
+}
+aside.menu.txtviolet li.active {
+  color: #af27b0;
+}
+aside.menu.txtyellow li.active {
+  color: #9e9605;
+}
+aside.menu.txtblue li.active {
+  color: #1654be;
+}
+aside.menu ul {
+  padding-bottom: 12px;
+}
+.contactcontentcontainer {
+  padding: 1px 0 50px;
+  margin-right: 12%;
+}
+.subtitle.left {
+  float: left;
+  width: 50%;
+}
+.subtitle.right {
+  float: left;
+  width: 40%;
+  margin-left: 10%;
+}
+.subtitle span {
+  text-transform: none;
+}
+.ctabs {
+  margin: 20px 0;
+}
+.ctabs .tabcaps {
+  overflow: hidden;
+}
+.ctabs .tabcaps li {
+  font-family: "Inconsolata", fixed;
+  font-size: 12px;
+  font-weight: bold;
+  float: left;
+  text-transform: uppercase;
+  margin-right: 3%;
+  letter-spacing: 0.1em;
+  margin-bottom: 6px;
+}
+.ctabs .tabcaps li.active {
+/*   color: black; */
+}
+.ctabs .tabcontent {
+  overflow: hidden;
+}
+.ctabs .tabcontent li {
+  display: none;
+}
+.ctabs .tabcontent li.active {
+  display: block;
+}
+.applylist {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+}
+.applylist h3 {
+  margin-top: 0;
+}
+.applylist .hr {
+  padding-top: 40px;
+  clear: both;
+}
+.applylist li {
+  overflow: hidden;
+  margin-top: 55px;
+}
+.applylist li .title {
+  float: left;
+  width: 108px;
+  text-align: right;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.applylist li .title.exw {
+  width: 28%;
+  text-align: left;
+}
+.exw a {
+  text-decoration: underline;
+}
+.applylist li .title p {
+  font-weight: normal;
+  margin-top: 8px;
+  margin-left: 0;
+  text-transform: none;
+}
+.applylist li p {
+  font-family: "Inconsolata", fixed;
+  margin-left: 33%;
+  letter-spacing: 0.1em;
+}
+.applylist .more {
+  color: #838686;
+  font-family: "Inconsolata", fixed;
+  font-weight: normal;
+  font-size: 12px;
+  display: inline-block;
+/*   vertical-align: middle; */
+  text-transform: none;
+  margin-left: 0px;
+  margin-top: 10px;
+  padding-right: 26px;
+  background: url("img/arrowr.png") no-repeat 100% 50%;
+  background-size: 15px 11px;
+  transition: .5s;
+  letter-spacing: 0.1em;
+}
+.applylist .more:hover {
+  padding-right: 52px;
+}
+.colyellow .more {
+  color: black;
+  background: url("img/arrowrblk.png") no-repeat 100% 50%;
+  background-size: 15px 11px;
+}
+.colyellow.textcontent .lnkmore {
+  color: black;
+  background: url("img/arrowrblk.png") no-repeat 100% 50%;
+  background-size: 15px 11px;
+}
+.lnkmore.mright {
+  margin-right: 52px;
+}
+.lnkmore.mright:hover {
+  margin-right: 26px;
+}
+.applylist h3 {
+  color: black;
+}
+.textcontent .lnkmore {
+  color: #ACAEAE;
+  font-family: "Inconsolata", fixed;
+  font-weight: normal;
+  font-size: 12px;
+  display: inline-block;
+/*   vertical-align: middle; */
+  text-transform: none;
+  margin-left: 0px;
+  padding-right: 26px;
+  margin-top: 4px;
+  background: url("img/arrowr.png") no-repeat 100% 50%;
+  background-size: 15px 11px;
+  width: auto;
+  transition: .5s;
+  letter-spacing: 0.1em;
+}
+.textcontent .lnkmore:hover {
+  padding-right: 52px;
+}
+.relist {
+  margin: 40px 0 20px;
+}
+.relist>li {
+  margin-top: 40px;
+}
+.collapselnk {
+  display: block;
+  height: 26px;
+  border: 1px solid #cacaca; 
+  font-family: "Inconsolata", fixed;
+  font-size: 12px;
+  text-transform: uppercase;
+  background: url("img/ddarrows.png") no-repeat;
+  background-size: 10px 100px;
+  background-position: 98% -82px;
+  line-height: 26px;
+  padding: 0 16px;
+  letter-spacing: 0.1em
+}
+.collapselnk.closed {
+  background-position: 98% 8px;
+}
+.collapsecont {
+  
+}
+.collapsecont li {
+/*   margin-top: 20px; */
+  font-family: "Inconsolata", fixed;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  color: #ACAEAE;
+}
+.collapsecont a {
+  text-decoration: underline;
+}
+.googlecal {
+  margin-bottom: 16px;
+}
+.ftable {
+  margin-right: -25%;
+}
+.textcontentcontainer.wide .ftable {
+  margin-right: 0;
+}
+.filter form.quick,
+.ftable form {
+  float: right;
+  font-family: "Inconsolata", fixed;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+.filter form.quick input,
+.ftable form input {
+  height: 30px;
+  margin-top: 5px;
+  font-size: 12px;
+  color: white;
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.filter form.quick button,
+.ftable form button {
+  display: inline-block;
+  background: url("img/qloop.png?v=1") 50% 50% no-repeat;
+  background-size: 17px 17px;
+  height: 30px;
+  width: 17px;
+  margin-top: 11px;
+  overflow: hidden;
+  text-indent: -10000px;
+  border: none;
+}
+.filter form.quick {
+  float: none;
+  display: inline-block;
+}
+.filter form.quick input {
+  background: transparent;
+  color: white;
+}
+.ftable {
+/*   padding-top: 30px; */
+}
+.ftable table {
+  border-top: 1px solid white;
+  font-family: "Inconsolata", fixed;
+  font-size: 12px;
+  width: 100%;
+  letter-spacing: 0.1em;
+}
+.ftable table td {
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding: 10px 0;
+}
+.ftable table .name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.ftable form input::-webkit-input-placeholder { color:#fff; }
+.ftable form input::-moz-placeholder { color:#fff; } /* firefox 19+ */
+.ftable form input:-ms-input-placeholder { color:#fff; } /* ie */
+.ftable form input:-moz-placeholder { color:#fff; }
+
+.textcontent.colwhite .txt {
+  color: #1a1a1a;
+}
+.textcontent.colyellow .txt {
+  color: white;
+}
+.textcontent .intro {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+}
+.textcontent date {
+  margin: 50px 0 -50px;
+  border-top: 1px solid transparent;
+  display: block;
+  color: #838686;
+  font-family: "Inconsolata", fixed;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.textcontent .sideimg {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  margin-right: 4%;
+}
+.textcontent .sideimg img {
+  display: block;
+  width: 100%;
+}
+.textcontent .sideimg span {
+  color: #868686;
+  font-family: "Inconsolata", fixed;
+  font-size: 12px;
+  line-height: 18px;
+  display: block;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.textcontent .fullimg {
+  padding: 10px;
+  margin: 20px 0;
+}
+.textcontent .fullimg img {
+  display: block;
+  width: 100%;
+}
+.textcontent .fullimg span {
+  color: #868686;
+  font-family: "Inconsolata", fixed;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 10px 15% 10px 15%;
+  text-align: center;
+  display: block;
+  letter-spacing: 0.1em;
+}
+.exthead {
+  margin-bottom: -220px;
+  position: relative;
+  min-height: 450px;
+}
+.exthead.news {
+  min-height: 0;
+}
+.exthead.fullheight {
+  margin-bottom: -6.25%;
+}
+.exthead.compact {
+  margin-bottom: -343px;
+}
+.exthead.searchr {
+  background: #174799;
+}
+.headcontent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.hsubtitle {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+/*   color: #cacaca; */
+  line-height: 28px;
+  width: 50%;
+}
+.headcontent h1 {
+  font-weight: bold;
+  font-size: 44px;
+  text-transform: uppercase;
+  margin-top: 60px;
+}
+.headcontent .filter {
+  margin-top: 35px;
+  vertical-align: middle;
+  font-family: "Inconsolata",fixed;
+  letter-spacing: 0.1em;
+}
+.headcontent .filter>form {
+  vertical-align: middle;
+}
+.headcontent .filter>form>input,
+.headcontent .filter>form>button {
+  margin-top: 0;
+}
+.headcontent .filter>a.filter {
+  border-right: 1px solid #cacaca;
+  display: inline-block;
+  font-size: 12px;
+  padding: 0 40px 0 10px;
+  width: 300px;
+  background-position: 95% 8px;
+  vertical-align: middle;
+  margin: 0;
+  margin-right: 80px;
+}
+.headcontent .filter:hover>a.filter {
+  background-position: 95% -82px;
+}
+.headcontent nav {
+  position: absolute;
+  top: 40px;
+  right: 5px;
+  font-family: "Inconsolata",fixed;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: right;
+  letter-spacing: 0.1em;
+}
+.headcontent nav.single {
+  top: 100px;
+}
+.headcontent nav li {
+  line-height: 23px;
+}
+.headcontent nav li.active {
+  color: #a19800;
+}
+.ncont {
+  font-family: "Inconsolata", fixed;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+}
+.newslisting date {
+  margin: 0;
+  float: right;
+}
+.newslisting li {
+  border-bottom: 1px solid #e4e4e4;
+  padding-bottom: 15px;
+}
+.newslisting .newsimg {
+  float: left;
+  margin: 10px 16px 10px 0;
+}
+.newslisting>li>p,
+.newslisting .ncont {
+/*   margin-left: 136px; */
+}
+ul.search {
+  padding-top: 25px;
+  min-height: 160px;
+}
+ul.search li {
+  padding: 5px 0;
+}
+ul.search li a {
+  text-decoration: underline;
+  font-family: "Inconsolata", fixed;
+  font-size: 14px;
+  display: inline-block;
+  padding-right: 26px;
+  background: url("img/arrowr.png") no-repeat 100% 50%;
+  background-size: 15px 11px;
+  width: auto;
+  transition: .5s;
+  letter-spacing: 0.1em;
+}
+ul.search li a:hover {
+  padding-right: 52px;
+}
+.calxlcont {
+  margin-top: 80px;
+}
+.calxlcont img {
+  display: block;
+  width: 100%;
+}
+.fixh {
+  height: 460px;
+}
+.fulldir {
+  width: 100%;
+  font-family: "Inconsolata", fixed;
+  font-size: 12px;
+  margin-top: 45px;
+  letter-spacing: 0.1em;
+}
+.fulldir th {
+  color: #174799;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.fulldir .name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.fulldir .name a:hover {
+  color: #174799;
+}
+.fulldir td {
+  padding: 10px 0;
+}
+.fulldir tr {
+  border-bottom: 1px solid #cacaca;
+}
+table.fulldir th, table.fulldir td {
+  padding: 10px 10px;
+}
+table.fulldir td:last-child a {
+  text-decoration: underline;
+}
+
+form.login {
+  padding-bottom: 40px;
+}
+form.login .field {
+  margin: 30px 0;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+form.login .field label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  line-height: 45px;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  font-size: 18px;
+  display: block;
+}
+form.login .field input {
+  font-family: "Inconsolata", fixed;
+  font-size: 12px;
+  background: white;
+  padding: 8px 8px;
+  border: 1px solid #838686;
+  width: 40%;
+  min-width: 280px;
+  letter-spacing: 0.1em;
+}
+form.login .field p {
+  font-family: "Inconsolata", fixed;
+  font-size: 12px;
+  padding: 5px 0;
+  color: #ed1c24;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+form.login .error {
+  position: absolute;
+  height: 87px;
+  top: 10px;
+  left: 46%;
+  background: #cacaca;
+  font-family: "Inconsolata", fixed;
+  font-size: 12px;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 24px 7% 0;
+  letter-spacing: 0.1em;
+}
+form.login .error span {
+  display: block;
+  color: #838686;
+  margin-bottom: 10px;
+}
+form.login .error em {
+  display: block;
+  color: #174799;
+  text-transform: uppercase;
+}
+form.login .error i {
+  display: block;
+  position: absolute;
+  left: -9px;
+  top: 33px;
+  width: 9px;
+  height: 18px;
+  background: url("img/bublearrow.png") no-repeat;
+}
+form.login .error .close {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  text-transform: uppercase;
+  color: #838686;
+  padding: 4px;
+}
+form.login .checkbox {
+  overflow: hidden;
+  margin-bottom: 9px;
+}
+form.login .checkbox label {
+  color: #838686;
+  font-family: "Inconsolata", fixed;
+  font-size: 12px;
+  padding-left: 40px;
+  height: 28px;
+  line-height: 28px;
+  overflow: hidden;
+  display: block;
+  background: url("img/checkbox.png") no-repeat;
+  background-size: 28px 56px;
+  letter-spacing: 0.1em;
+}
+form.login .checkbox label.checked {
+  background-position: 0 100%;
+}
+form.login .checkbox input {
+  position: absolute;
+  left: -10000px;
+}
+form.login button {
+  display: block;
+  margin-top: 40px;
+  width: 108px;
+  height: 46px;
+  background: #1a1a1a;
+  color: #cacaca;
+  font-family: "Inconsolata", fixed;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: 0;
+}
+form.login a.forgot {
+  color: #838686;
+  font-family: "Inconsolata", fixed;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 40px;
+  letter-spacing: 0.1em;
+}
+.profilec {
+  padding: 60px 8.33%;
+  color: white;
+  overflow: hidden;
+}
+.profilec img {
+  width: 20%;
+  float: left;
+  display: block;
+  margin-right: 3%;
+}
+.profilec>div {
+  float: left;
+  line-height: 22px;
+  font-size: 12px;
+  font-family: "Inconsolata", fixed;
+  width: 37%;
+  letter-spacing: 0.1em;
+}
+.profilec>div a {
+  text-decoration: underline;
+}
+.profilec h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+/*   margin-bottom: 20px; */
+}
+.sideimages>ul {
+  margin-top: 40px;
+}
+.sideimages>ul>li>img {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.sideimages>ul>li>span {
+  font-size: 12px;
+  font-family: "Inconsolata", fixed;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+}
+.sideimages>ul>li {
+  margin-bottom: 20px;
+  position: relative;
+}
+.sideimages a {
+  text-decoration: underline;
+}
+.sideimages .zoom {
+  position: absolute;
+  background: #1a1a1a;
+  border: 1px solid #cacaca;
+  top: 0;
+  left: 0;
+  width: 500%;
+  overflow: hidden;
+  z-index: 2;
+  display: none;
+}
+.sideimages .zoom.shown {
+  display: block;
+}
+.sideimages .zoom .imgc {
+  width: 50%;
+  border-right: 1px solid #cacaca;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  float: left;
+}
+.sideimages .zoom img {
+  width: 100%;
+  display: block;
+}
+.sideimages .zoom p {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 85px 60px 40px 60px;
+  font-size: 12px;
+  line-height: 24px;
+  font-family: "Inconsolata", fixed;
+  letter-spacing: 0.1em;
+}
+.sideimages .zoom .close {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 26px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+  border-left: 1px solid #cacaca;
+  border-bottom: 1px solid #cacaca;
+  width: 26px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #cacaca;
+  font-family: "Inconsolata", fixed;
+  letter-spacing: 0.1em;
+}
+.past {
+  font-size: 12px;
+  margin-top: 40px;
+  width: 120%;
+  font-size: 12px;
+  font-family: "Inconsolata", fixed;
+/*   margin-right: -33%; */
+  margin-bottom: 150px;
+  letter-spacing: 0.1em;
+}
+.past th {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-right: 8px solid transparent;
+}
+.past td {
+  border-bottom: 1px dotted #8a8d8d;
+  height: 18px;
+  margin-bottom: 8px;
+  border-right: 8px solid transparent;
+  padding-top: 6px;
+}
+.past td.last {
+  border-bottom: 1px solid transparent;
+}
+.past td span {
+  display: inline-block;
+  height: 19px;
+  background: white;
+  margin-bottom: -5px;
+  line-height: 22px;
+}
+.past td span a {
+  text-decoration: underline;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.facultylab {
+  
+}
+.facultylab .details div>a {
+  color: #ccc;
+}
+.facultylab .img img {
+  display: block;
+  width: 100%;
+}
+.facultylab .details {
+/*   line-height: 24px; */
+  font-size: 12px;
+  font-family: "Inconsolata", fixed;
+  letter-spacing: 0.1em;
+}
+.facultylab .details div {
+  margin-top: 20px;
+}
+.facultylab .details h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+/*   margin-bottom: 20px; */
+}
+.facultylab .details span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 24px;
+}
+.facultylab .details a {
+  text-decoration: underline;
+}
+header,
+header.fixedlogos {
+  padding-top: 98px;
+}
+.homewithintro header,
+.homewithintro header.fixedlogos {
+  padding-top: 0;
+}
+header .logotop,
+header.fixedlogos .logotop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+/*  max-width: 1600px;
+  min-width: 1000px;*/
+  z-index: 1;
+  background: #1a1a1a;
+}
+.homewithintro header.fixedlogos .logotop {
+  position: relative;
+}
+.homewithintro header.fixedlogos.scrolled .logotop {
+  position: fixed;
+}
+.homewithintro header.fixedlogos.scrolled {
+  padding-top: 98px;
+}
+header>nav {
+  position: relative;
+  z-index: 1;
+  background: #1a1a1a;
+}
+header.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+/*   max-width: 1600px; */
+  max-width: 1480px;
+  min-width: 1000px;
+  z-index: 2;
+}
+header.fixed .hhimg {
+  display: none;
+}
+header .logotop a {
+  transition: .3s;
+}
+header.fixed, 
+header.fixedlogos.fixed,
+.homewithintro header.fixedlogos.fixed.scrolled {
+  padding-top: 66px;
+  background: #1a1a1a;
+}
+header.fixed .logotop {
+  height: 66px;
+}
+header.fixed .logotop .logo {
+  transform: scale(0.666);
+  transform-origin: 100% 0%;
+  opacity: .5;
+}
+header.fixed .logotop .sologo {
+  transform: scale(0.666);
+  transform-origin: 0% 0%;
+  opacity: .5;
+}
+.headerspacer {
+  display: none;
+}
+.headerspacer.fixed {
+  display: block;
+}
+.headerbg.fixed {
+  position: fixed;
+  height: 116px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #1a1a1a;
+  z-index: 1;
+}
+.hhimg .imgcont {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.hhimg .imgcont img {
+  position: absolute;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+.hhimg.anim .half {
+  padding: 0;
+  z-index: 0;
+}
+.hhimg.anim ul {
+  padding-top: 100%;
+}
+.hhimg.anim li {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.infoBox {
+  width: 220px;
+  background: white;
+  padding: 12px 12px;
+  color: black;
+  position: relative;
+  opacity: 0.98;
+  font-size: 12px;
+  color: black;
+  font-family: "Monserrat", sans-serif;
+/*   box-shadow: 4px 5px 0px rgba(0,0,0,0.1); */
+  border-radius: 3px;  -moz-border-radius: 3px;
+/*   border: 1px solid #ccc; */
+  overflow: visible !important;
+}
+.infoBox img.img {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+.infoBox img.img+div {
+  margin-left: 110px;
+}
+.infoBox em {
+  font-family: "Monserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.infoBox div>span {
+  position: absolute;
+  bottom: -14px;
+  height: 15px;
+  width: 18px;
+  left: 92px;
+  background: url("img/bubblearrow.png") no-repeat;
+}
+.infoBox h5 {
+  color: #009191;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.infoBox div>a {
+  font-family: "Inconsolata", fixed;
+  color: #838686;
+  padding-right: 26px;
+  line-height: 19px;
+  display: inline-block;
+  background: url("img/arrowr.png") no-repeat 100% 50%;
+  background-size: 15px 11px;
+  letter-spacing: 0.1em;
+}
+.txt a {
+  text-decoration: underline;
+}
+.txt a.lnkback {
+  text-decoration: none;
+}
+html body .norm {
+  margin-right: 0%;
+}
+.lnkback {
+  display: block;
+  border: 1px solid #cacaca;
+  font-family: "Inconsolata", fixed;
+  font-size: 12px;
+  height: 26px;
+  line-height: 26px;
+  overflow: hidden;
+  padding: 0 15px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 0.1em;
+}
+.mtop {
+  margin-top: 20px;
+}
+.nosearch {
+  font-family: "Inconsolata",fixed;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  letter-spacing: 0.1em;
+}
+.nosearch p {
+  margin-bottom: 1em;
+}
+.nosearch a {
+  text-decoration: underline;
+  font-family: "Inconsolata", fixed;
+  font-size: 14px;
+  display: inline-block;
+  padding-right: 26px;
+  background: url("img/arrowr.png") no-repeat 100% 50%;
+  background-size: 15px 11px;
+  width: auto;
+  transition: .5s;
+  letter-spacing: 0.1em;
+}
+.nosearch a:hover {
+  padding-right: 52px;
+}
+.searchfilter {
+  width: 354px;
+  height: 26px;
+  background: #1a1a1a;
+  border: 1px solid #cacaca;
+  color: #cacaca;
+  margin-top: 30px;
+  position: relative;
+  z-index: 3;
+  z-index: 1;
+}
+.mapfilterc {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  width: 354px;
+  height: 26px;
+  background: #1a1a1a;
+  border: 1px solid #cacaca;
+  color: #cacaca;
+}
+.searchfilter a,
+.mapfilterc a {
+  font-family: "Inconsolata",fixed;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+}
+.searchfilter>a,
+.mapfilterc>a {
+  color: white;
+  line-height: 26px;
+  display: block;
+  height: 26px;
+  padding: 0 20px;
+  text-transform: uppercase;
+  background: url("img/ddarrows.png") no-repeat 96% 8px;
+  background-size: 10px 100px;
+}
+.searchfilter:hover>a,
+.mapfilterc.hover>a {
+  background-position: 96% -81px;
+}
+.searchfilter .ddown,
+.mapfilterc .ddown {
+  background: #1a1a1a;
+  border: 1px solid #cacaca;
+/*   border-top: 0px none; */
+  margin-left: -1px;
+  margin-right: -1px;
+  line-height: 18px;
+  padding: 10px 20px;
+  overflow: hidden;
+  display: none;
+}
+.searchfilter:hover .ddown,
+.mapfilterc.hover .ddown {
+  display: block;
+}
+.searchfilter .ddown ul,
+.mapfilterc .ddown ul {
+  float: left;
+  width: 130px;
+}
+.searchfilter .ddown ul:first-child,
+.mapfilterc .ddown ul:first-child {
+  width: 183px;
+}
+.searchfilter .ddown li,
+.mapfilterc .ddown li {
+  margin-top: 6px;
+}
+.searchfilter .ddown li.active,
+.mapfilterc .ddown li.active {
+  color: white;
+  text-decoration: underline;
+}
+.searchfilter .ddown li a:hover,
+.mapfilterc .ddown li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.searchfilter .ddown li:first-child,
+.mapfilterc .ddown li:first-child {
+  margin-top: 0;
+}
+.socialbox {
+  width: 3.37%;
+  position: absolute;
+  overflow: hidden;
+  left: -5.5%;
+  top: 78px;
+}
+.socialbox a {
+  width: 100%;
+  padding-top: 100%;
+  margin-bottom: 10%;
+  overflow: hidden;
+  height: 1px;
+  text-indent: -10000px;
+/*   background: red; */
+  display: block;
+}
+.socialbox a.fb {
+  background: url("img/facebook.png") no-repeat;
+  background-size: 100% 100%;
+}
+.socialbox a.tw {
+  background: url("img/twitter.png") no-repeat;
+  background-size: 100% 100%;
+}
+.colyellow.textcontent .lnkmore.white {
+  color: white;
+  background-image: url("img/arrowrwht.png");
+  background-size: 15px 11px;
+}
+.coldgray.textcontent h3 {
+  color: white;
+}
+input {
+  -webkit-appearance: none;
+  outline: none;
+}
+.hnewscontainer .newsentry .lnkmore:hover {
+  border-color: white;
+  color: white;
+}
+.lnkback:hover {
+  color: white;
+  border-color: white;
+}
+.colwhite .lnkback:hover {
+  color: black;
+  border-color: black;
+}
+
+.newsend { height: 30px }
+.textcontent .newsmainimg { width: 100% }
+
+
+.wrapper {
+  position: relative;
+}
+.wrapper>:first-child {
+  overflow: hidden;
+}
+
+.wrapper.fixed>:first-child {
+  position: fixed;
+
+}
+
+.txt em {
+  font-style: italic;
+}
+.txt strong {
+  font-weight: bold;
+}
+.txt u {
+  text-decoration: underline;
+}
+.txt ul li {
+  list-style: disc;
+  padding-left: 15px;
+}
+
+.welcomecontainer {
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 33%;
+  background: #1a1a1a;
+  color: white;
+  position: relative;
+  vertical-align: middle;
+}
+.welcomecontainer .fh {
+  height: 100%;
+  width: 1px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.welcomecontainer>ul {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 33%;
+  height: 0;
+  padding-top: 33%;
+  padding-top: 50%;
+  line-height: auto;
+}
+.welcomecontainer>ul li {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 1s opacity;
+}
+.welcomecontainer>ul li:first-child {
+  opacity: 1;
+}
+.welcomecontainer>ul img {
+  width: 100%;
+  display: block;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.welcomecontainer>ul:hover img {
+  transform: scale(1);
+}
+
+.welcomecontainer .welcomequote {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 90%;
+  padding-left: 12.2%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 1.40em;
+  color: white;
+  vertical-align: baseline;
+  position: relative;
+  vertical-align: middle;
+}
+.welcomecontainer .welcomequote>.quote {
+  font-size: 48px;
+/*   display: inline-block; */
+  line-height: 26px;
+  vertical-align: baseline;
+  position: relative;
+  top: 10px;
+  margin-left: -5px;
+}
+.welcomecontainer .welcomequote>.quote:first-child {
+/*   position: absolute; */
+/*   top: 12px; */
+/*   left: 80px; */
+  margin: 0 -5px 0 0;
+}
+.welcomecontainer .welcomequote .signature {
+  color: #85888a;
+  display: block;
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+h3.resourcescontacts {
+  color: #cacaca;
+  margin-top: 0;
+}
+ul.resourcescontacts {
+  overflow: hidden;
+  padding-right: 3%;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.resourcescontacts>li {
+  float: left;
+  width: 23%;
+  padding-right: 2%;
+  color: #ACAEAE;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  font-family: "Inconsolata", serif;
+}
+.resourcescontacts>li>img {
+  width: 100%;
+  display: block;
+  margin-bottom: 28px;
+}
+.resourcescontacts>li>p {
+  line-height: 24px;
+}
+.resourcescontacts>li a {
+  text-decoration: underline;
+}
+.fixedbg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1a1a1a;
+}
+
+html .textcontent table.past {
+  width: 100%;
+}
+
+@media (min-width: 1480px) {
+  .wrapper.fixed>:first-child {
+    position: fixed;
+    left: 50%;
+    width: 1480px;
+    max-width: 1480px;
+    margin-left: -740px;
+  }
+}
+
+/* @media screen and (max-width: 1180px) and (min-width: 768px) {
+   html .hmembers .info span.qbody {
+     line-height: 24px;
+     font-size: 16px;
+   }
+   html .hmembers .info span.quote {
+     margin: 10px 0 3px;
+     font-size: 24px;
+   }
+   html .hmembers .info span.name {
+     font-size: 11px;
+   }
+   html .hmembers .info span.title {
+     font-size: 11px;
+     margin-top: 4px;
+   }
+ }*/
