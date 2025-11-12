@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <title>NeuroCafé</title>
+    <script src="./The Solomon H Snyder Department of Neuroscience_files/jquery-1.11.3.min.js"></script>
+    <script src="./The Solomon H Snyder Department of Neuroscience_files/layout.js"></script>
+    <link rel="stylesheet" type="text/css" href="./The Solomon H Snyder Department of Neuroscience_files/layout.css">
+  </head>
+  <body class="homewithintro skipintro">
+      <iframe id="introanimation" src="./The Solomon H Snyder Department of Neuroscience_files/saved_resource.html"></iframe>
+    <div id="introspacer" style="height: 615px;"></div>
+    <script>
+      $(window).resize(function() {
+        $("#introspacer").css("height", $(window).innerHeight()+"px");
+        $(window).scroll();
+      }).resize();
+      $(window).scroll(function() {
+        if ($(window).scrollTop()>=$(window).innerHeight())
+          $(".fixedlogos").addClass("scrolled");
+        else
+          $(".fixedlogos").removeClass("scrolled");
+      }).scroll();
+      $(function() {
+        if ($("body").hasClass("skipintro"))
+          $("body,html").scrollTop($(window).innerHeight());
+      });
+    </script>
+        <div class="pagecontainer">
+      <div class="outercontainer">
+      <div class="innercontainer">
+        <div class="headerspacer" style="height: 143px;"></div><div class="headerbg"></div>
+        <header class="s12p fixedlogos">
+          <div class="logotop s12p">
+	    <div class="innercontainer">
+	      <div class="pl1p pr1p">
+		<h1><a href="http://www.hopkinsmedicine.org/" class="logo" target="_blank">Johns Hopkins School of Medicine</a></h1>
+		<p><a href="https://neuroscience.jhu.edu/" class="sologo">The Solomon H. Snyder Department of Neuroscience</a></p>
+	      </div>
+            </div>
+          </div>
+          <nav class="large ml1p mr1p s10p">
+            <div class="search"><form action="https://neuroscience.jhu.edu/search"><input type="text" name="q" placeholder="search"><button>Search</button></form></div>
+            <div class="mobilemenu"><a href="https://neuroscience.jhu.edu/">Menu</a></div>
+            <ul>
+              <li class="">
+                <a href="https://neuroscience.jhu.edu/about">About</a>
+                <div>
+                  <div>
+                    <ul>
+                      <li class="active">
+                        <a href="https://neuroscience.jhu.edu/about">Welcome</a></li>
+                      <li class="">
+                        <a href="https://neuroscience.jhu.edu/about/our-history">Our history</a></li>
+                      <li class="">
+                        <a href="https://neuroscience.jhu.edu/about/in-baltimore">In + around Baltimore</a></li>
+                    </ul>
+                    <ul>
+                      <li class="">
+                        <a href="https://neuroscience.jhu.edu/about/stories">Hopkins stories</a></li>
+                      <li class="">
+                        <a href="https://neuroscience.jhu.edu/about/contact">Contact</a></li>
+                      <li class="">
+                        <a href="https://neuroscience.jhu.edu/about/49">Brain Resilience Neuroscience Cluster Faculty Search</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="">
+                <a href="https://neuroscience.jhu.edu/research">Research+faculty</a>
+                <div>
+                  <div>
+                    <ul>
+                      <li class="">
+                        <a href="https://neuroscience.jhu.edu/research">Areas of Research</a>
+                        <ul>
+                          <li>
+                            <a href="https://neuroscience.jhu.edu/research/area/5">Neural Circuits, Ensembles + Connectomes</a></li>
+                          <li>
+                            <a href="https://neuroscience.jhu.edu/research/area/4">Developmental Neuroscience</a></li>
+                          <li>
+                            <a href="https://neuroscience.jhu.edu/research/area/3">Systems, Cognitive + Computational Neuroscience</a></li>
+                          <li>
+                            <a href="https://neuroscience.jhu.edu/research/area/2">Cellular + Molecular Neuroscience</a></li>
+                          <li>
+                            <a href="https://neuroscience.jhu.edu/research/area/1">Neurobiology of Disease</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li class="">
+                        <a href="https://neuroscience.jhu.edu/research/faculty">Faculty profiles</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="">
+                <a href="https://neuroscience.jhu.edu/graduate">Grad program</a>
+                <div>
+                  <div>
+                    <ul>
+                      <li class="active">
+                        <a href="https://neuroscience.jhu.edu/graduate">Welcome</a></li>
+                      <li class="">
+                        <a href="https://neuroscience.jhu.edu/graduate/apply">How to Apply</a></li>
+                      <li class="">
+                        <a href="https://neuroscience.jhu.edu/graduate/curriculum">Curriculum</a></li>
+                      <li class="">
+                        <a href="https://neuroscience.jhu.edu/graduate/fellowships">Student + Postdoc Fellowships</a></li>
+                    </ul>
+                    <ul>
+                      <li class="">
+                        <a href="https://neuroscience.jhu.edu/graduate/student-directory">Student Directory</a></li>
+                      <li class="">
+                        <a href="https://neuroscience.jhu.edu/graduate/postdoc-directory">Postdoc Directory</a></li>
+                      <li class="">
+                        <a href="https://neuroscience.jhu.edu/graduate/alumni-directory">Alumni Directory</a></li>
+                    </ul>
+                    <ul>
+                      <li class="">
+                        <a href="https://neuroscience.jhu.edu/graduate/life-at-jhu">Life At JHU</a>
+                        <ul>
+                          <li>
+                            <a href="https://neuroscience.jhu.edu/graduate/life-at-jhu/1">Living in Baltimore</a></li>
+                          <li>
+                            <a href="https://neuroscience.jhu.edu/graduate/life-at-jhu/2">Recreation + Wellness</a></li>
+                          <li>
+                            <a href="https://neuroscience.jhu.edu/graduate/life-at-jhu/3">International Office</a></li>
+                        </ul>
+                      </li>
+                      <li class="">
+<!--                         <a href="/recruitment/outreachx">Recruitment and Outreach</a> -->
+                        <ul>
+                        </ul>
+                      </li>
+                      <li class="">
+                        <a href="https://neuroscience.jhu.edu/graduate/21">Graduate Program Resources</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="">
+                <a href="https://neuroscience.jhu.edu/recruitment">Recruitment+Outreach</a>
+                <div>
+                  <div>
+                    <ul>
+                      <li class="active">
+                        <a href="https://neuroscience.jhu.edu/recruitment">Recruitment initiatives</a></li>
+                      <li class="">
+                        <a href="https://neuroscience.jhu.edu/recruitment/outreach">Outreach at Hopkins Neuroscience</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="">
+                <a href="https://neuroscience.jhu.edu/resources">Resources</a>
+                <div>
+                  <div>
+                    <ul>
+                      <li class="active">
+                        <a href="https://neuroscience.jhu.edu/resources">Full Directory</a></li>
+                    </ul>
+                    <ul>
+                      <li class="">
+                        <a href="https://neuroscience.jhu.edu/resources/1">For Research</a>
+                        <ul>
+                          <li>
+                            <a href="https://neuroscience.jhu.edu/resources/6">Murine Mutagenesis Core</a></li>
+                          <li>
+                            <a href="https://neuroscience.jhu.edu/resources/3">Neuroscience Imaging Center (NIC)</a></li>
+                          <li>
+                            <a href="https://neuroscience.jhu.edu/resources/7">Neuroscience Machine Shop</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li class="">
+                        <a href="https://neuroscience.jhu.edu/resources/2">For Faculty</a>
+                        <ul>
+                        </ul>
+                      </li>
+                      <li class="">
+                        <a href="https://neuroscience.jhu.edu/resources/8">For Postdoctoral Fellows</a>
+                        <ul>
+                        </ul>
+                      </li>
+                      <li class="">
+                        <a href="https://neuroscience.jhu.edu/resources/9">For Graduate Students</a>
+                        <ul>
+                        </ul>
+                      </li>
+                      <li class="">
+                        <a href="https://neuroscience.jhu.edu/resources/10">For Undergraduate Students</a>
+                        <ul>
+                        </ul>
+                      </li>
+                      <li class="">
+                        <a href="https://neuroscience.jhu.edu/resources/11">For Highschool Students</a>
+                        <ul>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="">
+                <a href="https://neuroscience.jhu.edu/news">News</a>
+              </li>
+              <li class="">
+                <a href="https://neuroscience.jhu.edu/events">Events</a>
+              </li>
+              <li class="">
+                <a href="https://neuroscience.jhu.edu/get-involved">Support</a>
+                <div>
+                  <div>
+                    <ul>
+                      <li class="">
+                        <a href="https://neuroscience.jhu.edu/get-involved/2">Support Neuroscience at Hopkins</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div class="wrapper" style="min-height: 452px;">
+        <section class="content homecontent" style="top: 0px;">
+          <div class="ml1p mr1p s10p">
+            <h2 data-html="Welcome&lt;a href=&quot;/about&quot;&gt;See more&lt;/a&gt;">Welcome<a href="https://neuroscience.jhu.edu/about">See more</a></h2>
+          </div>
+            <div class="welcomecontainer autoheight" style="line-height: 298px;">
+              <div class="fh"></div>
+              <div class="welcomequote">
+                <span class="quote">“</span>
+                <span class="qbody">One of the hallmarks of the Department of Neuroscience is the level of interaction and collaboration between laboratories and laboratories in other departments.</span>
+                <span class="quote">”</span>
+                <p class="signature">RICHARD HUGANIR, PhD, Director</p>
+              </div>
+              <ul>
+              <li style="opacity: 0;">
+                <img src="./The Solomon H Snyder Department of Neuroscience_files/18-1-1-425x284.jpg" alt="">
+              </li>
+              <li style="opacity: 0;">
+                <img src="./The Solomon H Snyder Department of Neuroscience_files/homepage2-1-425x284.jpg" alt="">
+              </li>
+              <li style="opacity: 0;">
+                <img src="./The Solomon H Snyder Department of Neuroscience_files/homepage3-1-425x284.jpg" alt="">
+              </li>
+              <li style="opacity: 1;">
+                <img src="./The Solomon H Snyder Department of Neuroscience_files/homepage4-1-425x284.jpg" alt="">
+              </li>
+              </ul>
+            </div>
+        </section>
+        </div>
+        <div class="wrapper" style="min-height: 829px;">
+        <section class="content homecontent" style="top: 0px;">
+          <div class="ml1p mr1p s10p">
+            <h2>Faculty Members<a href="https://neuroscience.jhu.edu/research/faculty">See more</a></h2>
+          </div>
+          <ul class="hmembers" style="min-height: 300px">
+            <li class="s3p autoheight" style="line-height: 338px;">
+              <div class="img">
+                <img src="./The Solomon H Snyder Department of Neuroscience_files/Opendak_Maya_headshot-1-370x370-bw.jpg">
+              </div>
+              <div class="info colblue " style="line-height: 338px;">
+                <div class="infocontainer">
+                  <span class="quote">“</span><!--
+               --><span class="qbody">How do we develop and adapt flexible strategies for interacting with others? </span><!--
+               --><span class="quote">”</span>
+                  <span class="name">Maya Opendak PhD</span>
+                  <span class="title">Assistant Professor of Neuroscience</span>
+                </div>
+              </div>
+              <a href="https://neuroscience.jhu.edu/research/faculty/158"></a>
+            </li>
+            <li class="s3p autoheight" style="line-height: 338px;">
+              <div class="img">
+                <img src="./The Solomon H Snyder Department of Neuroscience_files/BEN_0278-1-370x370-bw.jpg">
+              </div>
+              <div class="info colyellow primary" style="line-height: 338px;">
+                <div class="infocontainer">
+                  <span class="quote">“</span><!--
+               --><span class="qbody">We want to understand our learning and cognition by cells and synapses.</span><!--
+               --><span class="quote">”</span>
+                  <span class="name">Hyungbae Kwon PhD</span>
+                  <span class="title">Associate Professor of Neuroscience; Director of Admissions</span>
+                </div>
+              </div>
+              <a href="https://neuroscience.jhu.edu/research/faculty/143"></a>
+            </li>
+            <li class="s3p autoheight" style="line-height: 338px;">
+              <div class="img">
+                <img src="./The Solomon H Snyder Department of Neuroscience_files/Bergles-1-370x370-bw.jpg">
+              </div>
+              <div class="info colteal " style="line-height: 338px;">
+                <div class="infocontainer">
+                  <span class="quote">“</span><!--
+               --><span class="qbody">We investigate how neuron-glia interactions shape development, circuit function and disease progression.</span><!--
+               --><span class="quote">”</span>
+                  <span class="name">Dwight Bergles PhD</span>
+                  <span class="title">Professor of Neuroscience, Biomedical Engineering and Otolaryngology-Head &amp; Neck Surgery</span>
+                </div>
+              </div>
+              <a href="https://neuroscience.jhu.edu/research/faculty/6"></a>
+            </li>
+            <li class="s3p autoheight hover" style="line-height: 338px;">
+              <div class="img">
+                <img src="./The Solomon H Snyder Department of Neuroscience_files/Worley hi-res-1-370x370-bw.jpg">
+              </div>
+              <div class="info colviolet primary" style="line-height: 338px;">
+                <div class="infocontainer">
+                  <span class="quote">“</span><!--
+               --><span class="qbody">We study immediate early gene mediated plasticity in healthy and diseased brain.</span><!--
+               --><span class="quote">”</span>
+                  <span class="name">Paul Worley MD</span>
+                  <span class="title">Professor of Neuroscience</span>
+                </div>
+              </div>
+              <a href="https://neuroscience.jhu.edu/research/faculty/97"></a>
+            </li>
+            <li class="s3p autoheight" style="line-height: 338px;">
+              <div class="img">
+                <img src="./The Solomon H Snyder Department of Neuroscience_files/Goff hi-res-1-370x370-bw.jpg">
+              </div>
+              <div class="info colteal primary" style="line-height: 338px;">
+                <div class="infocontainer">
+                  <span class="quote">“</span><!--
+               --><span class="qbody">My lab studies the impact of long noncoding RNAs on the establishment and maintenance of distinct neuronal cell types.</span><!--
+               --><span class="quote">”</span>
+                  <span class="name">Loyal Goff PhD</span>
+                  <span class="title">Associate Professor of Neuroscience and Genetic Medicine </span>
+                </div>
+              </div>
+              <a href="https://neuroscience.jhu.edu/research/faculty/114"></a>
+            </li>
+            <li class="s3p autoheight" style="line-height: 338px;">
+              <div class="img">
+                <img src="./The Solomon H Snyder Department of Neuroscience_files/Pederick_Portrait_2025-01-1-370x370-bw.jpg">
+              </div>
+              <div class="info colviolet " style="line-height: 338px;">
+                <div class="infocontainer">
+                  <span class="quote">“</span><!--
+               --><span class="qbody">We study the mechanisms that organize neural circuits during development.</span><!--
+               --><span class="quote">”</span>
+                  <span class="name">Daniel Pederick PhD</span>
+                  <span class="title">Bloomberg Assistant Professor of Neuroscience; Assistant Professor of Otolaryngology-Head and Neck Surgery</span>
+                </div>
+              </div>
+              <a href="https://neuroscience.jhu.edu/research/faculty/177"></a>
+            </li>
+            <li class="s3p autoheight" style="line-height: 338px;">
+              <div class="img">
+                <img src="./The Solomon H Snyder Department of Neuroscience_files/Kirkwood hi-res-1-370x370-bw.jpg">
+              </div>
+              <div class="info colblue primary" style="line-height: 338px;">
+                <div class="infocontainer">
+                  <span class="quote">“</span><!--
+               --><span class="qbody">My lab tries to understand how sensory experience shapes cortical circuitry and function.</span><!--
+               --><span class="quote">”</span>
+                  <span class="name">Alfredo Kirkwood PhD</span>
+                  <span class="title">Professor of Neuroscience</span>
+                </div>
+              </div>
+              <a href="https://neuroscience.jhu.edu/research/faculty/42"></a>
+            </li>
+            <li class="s3p autoheight" style="line-height: 338px;">
+              <div class="img">
+                <img src="./The Solomon H Snyder Department of Neuroscience_files/WIN_20200102_16_01_34_Pro (4)-1-370x370-bw.jpg">
+              </div>
+              <div class="info colyellow " style="line-height: 338px;">
+                <div class="infocontainer">
+                  <span class="quote">“</span><!--
+               --><span class="qbody">We investigate how the hippocampus provides the contextual framework for episodic memories.</span><!--
+               --><span class="quote">”</span>
+                  <span class="name">James Knierim PhD</span>
+                  <span class="title">Professor of Neuroscience</span>
+                </div>
+              </div>
+              <a href="https://neuroscience.jhu.edu/research/faculty/43"></a>
+            </li>
+          </ul>
+        </section>
+        </div>
+        <div class="wrapper" style="min-height: 462px;">
+        <section class="content homecontent" style="width: 100%; top: 0px;">
+          <div class="s5p ml1p fleft relative">
+            <h2>Events<span class="mobblock-separator"></span><a href="https://neuroscience.jhu.edu/events">See events calendar</a></h2>
+            <div class="hcalcontainer">
+              <iframe width="430" height="308" style="border: 0; margin-top: -20px" src="./The Solomon H Snyder Department of Neuroscience_files/google-calendar.html"></iframe>
+<style>
+.gcal {
+  border: 0px;
+  max-width: 100%;
+}
+</style>
+            </div>
+          </div>
+          <div class="s5p mr1p fleft relative zindexgroup">
+            <h2>News<span class="mobblock-separator"></span><a href="https://neuroscience.jhu.edu/news">See news feed</a></h2>
+            <div class="hnewscontainer autoheight" style="line-height: 281px;">
+              <div class="imgcontainer">
+                <div><img src="./The Solomon H Snyder Department of Neuroscience_files/Hop-Coating-10-24-25-0271 AI-1-370x370.jpg"></div>
+                <a href="https://neuroscience.jhu.edu/news" class="cover"></a>
+              </div>
+              <div class="newsentry"><div>
+                <date>30 10 2025</date>
+                <h3>Neuroscience Graduate students receive their lab coats!</h3>
+                <a class="lnkmore" href="https://neuroscience.jhu.edu/news/269">Read more</a>
+              </div></div>
+            </div>
+            <a href="https://neuroscience.jhu.edu/news" class="cover"></a>
+          </div>
+          <div class="clear"></div>
+        </section>
+        </div>
+        <div class="wrapper" style="min-height: 604px;">
+        <section class="content homecontent" style="width: 100%; top: 0px;">
+          <div class="s10p ml1p mr1p">
+            <h2>Baltimore city<a href="https://neuroscience.jhu.edu/about/in-baltimore">See more</a></h2>
+          </div>
+          <div class="s12p hcity">
+            <ul>
+              <li class="info s4p fleft colviolet autoheightul2" style="line-height: 450px;">
+                <div class="infocc" style="display: none;">
+                  <div class="infocontainer">
+                    <span class="quote" style="display: inline">“</span>
+                    <span class="qbody" style="display: inline">The waterfront promenade is a great way to enjoy a sunny day in Baltimore. From Harborplace, you can walk east through lovely waterfront neighborhoods—Harbor East, Fells Point,Canton. Great watering holes, pubs, and coffee shops!</span>
+                    <span class="quote" style="display: inline">”</span>
+                    <span class="name" style="padding-top: 5px">Ronald Schnaar, Professor</span>
+                    <span class="title"></span>
+                  </div>
+                </div>
+                <div class="infocc" style="display: none;">
+                  <div class="infocontainer">
+                    <span class="quote" style="display: inline">“</span>
+                    <span class="qbody" style="display: inline">The Chesapeake Bay is one of the premier sailing areas in the world. I love sailing my boat and spending time on the water.</span>
+                    <span class="quote" style="display: inline">”</span>
+                    <span class="name" style="padding-top: 5px">Ernst Niebur, Professor</span>
+                    <span class="title"></span>
+                  </div>
+                </div>
+                <div class="infocc" style="display: block;">
+                  <div class="infocontainer">
+                    <span class="quote" style="display: inline">“</span>
+                    <span class="qbody" style="display: inline">I love the Crab Cake Cones from the Gypsy Queen (gypsyqueencafe.com) food truck when they’re on campus.</span>
+                    <span class="quote" style="display: inline">”</span>
+                    <span class="name" style="padding-top: 5px">Jenn Orthmann Murphy, MD, PhD (Postdoc, Bergles Lab)</span>
+                    <span class="title"></span>
+                  </div>
+                </div>
+              </li>
+              <li class="img s4p fleft"><div class="" style="position: static; left: 0px; top: 0px; width: 100%; transition: 0.5s; opacity: 0;"><img src="./The Solomon H Snyder Department of Neuroscience_files/1 colourful houses-1-428x428.jpg"></div>
+                <div class="imgshow" style="position: absolute; left: 0px; top: 0px; width: 100%; transition: 0.5s; opacity: 0;"><img src="./The Solomon H Snyder Department of Neuroscience_files/1 colourful houses-1-428x428.jpg"></div>
+                <div class="imgshow" style="position: absolute; left: 0px; top: 0px; width: 100%; transition: 0.5s; opacity: 0;"><img src="./The Solomon H Snyder Department of Neuroscience_files/2 oriole park-1-428x428.jpg"></div>
+                <div class="imgshow" style="position: absolute; left: 0px; top: 0px; width: 100%; transition: 0.5s; opacity: 0;"><img src="./The Solomon H Snyder Department of Neuroscience_files/baltimore-1-428x428.jpg"></div>
+                <div class="imgshow" style="position: absolute; left: 0px; top: 0px; width: 100%; transition: 0.5s; opacity: 1;"><img src="./The Solomon H Snyder Department of Neuroscience_files/4 park path-1-428x428.jpg"></div>
+                <div class="imgshow" style="position: absolute; left: 0px; top: 0px; width: 100%; transition: 0.5s; opacity: 0;"><img src="./The Solomon H Snyder Department of Neuroscience_files/5 cherry blossoms-1-428x428.jpg"></div>
+                <a href="https://neuroscience.jhu.edu/about/in-baltimore" class="fulloverlay"></a>
+              </li>
+              <li class="info s4p fleft colteal autoheightul2" style="line-height: 450px;">
+                <div class="infocc" style="display: none;">
+                  <div class="infocontainer">
+                    <span class="quote" style="display: inline">“</span>
+                    <span class="qbody" style="display: inline">The year-round ultimate frisbee leagues in Catonsville and the Neuroscience department softball team.</span>
+                    <span class="quote" style="display: inline">”</span>
+                    <span class="name" style="padding-top: 5px">Travis Faust, Graduate Student (Sawa Lab)</span>
+                    <span class="title"></span>
+                  </div>
+                </div>
+                <div class="infocc" style="display: none;">
+                  <div class="infocontainer">
+                    <span class="quote" style="display: inline">“</span>
+                    <span class="qbody" style="display: inline">I’m new here, so getting lost biking through Baltimore has been a great way to explore. The murals are beautiful. Also, it’s wonderful to be living in a city that is celebrated for their crab dishes—my favorite comfort food!</span>
+                    <span class="quote" style="display: inline">”</span>
+                    <span class="name" style="padding-top: 5px">Raina D’Aleo, Graduate Student</span>
+                    <span class="title"></span>
+                  </div>
+                </div>
+                <div class="infocc" style="display: block;">
+                  <div class="infocontainer">
+                    <span class="quote" style="display: inline">“</span>
+                    <span class="qbody" style="display: inline">Each neighborhood in Baltimore has a unique personality offering a variety of affordable food options. I love the charcuterie selection at Trinacria and Parts &amp; Labor.</span>
+                    <span class="quote" style="display: inline">”</span>
+                    <span class="name" style="padding-top: 5px">Wendy Xin, Graduate Student (Bonci Lab)</span>
+                    <span class="title"></span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <a href="https://neuroscience.jhu.edu/about/in-baltimore" class="fulloverlay"></a>
+          </div>
+        </section>
+        </div>
+        <div class="clear"></div>
+        <div class="footer-spacer"></div>
+        <div class="footer-wrapper">
+        <footer class="ml1p mr1p s10p">
+          <div class="tools">
+            <p><a href="http://www.hopkinsmedicine.org/Privacy/index.html" target="_blank">Privacy</a></p>
+            <p class="login"><a href="https://neuroscience.jhu.edu/login">Login<i class="login"></i></a></p>
+            <p><a href="https://neuroscience.jhu.edu/">Back to top<i class="top"></i></a></p>
+          </div>
+          <div class="social"><a href="https://neuroscience.jhu.edu/" class="tw">Twitter</a><a href="https://neuroscience.jhu.edu/" class="fb">Facebook</a></div>
+          <div class="info">
+            <p>© 2025 NeuroCafé</p>
+            <p>Powered by <a target="_blank" href="https://mnili.ir">mnili</a> @ <a target="_blank" href="https://neuromorfix.ir">NeuroMorFix Group</a></p>
+          </div>
+        </footer>
+        </div>
+      </div>
+    </div>
+      </div>
+    
+
+</body></html>
