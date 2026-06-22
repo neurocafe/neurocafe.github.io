@@ -1,517 +1,857 @@
 <!DOCTYPE html>
-<html>
-  <head>    
-    <title>NeuroCafé</title>
-    <script src="./src/jquery-1.11.3.min.js"></script>
-    <script src="./src/layout.js"></script>
-    <link rel="stylesheet" type="text/css" href="./src/layout.css">
-  </head>
-  <body class="homewithintro skipintro">
-      <iframe id="introanimation" src="./src/saved_resource.html"></iframe>
-    <div id="introspacer" style="height: 615px;"></div>
-    <script>
-      $(window).resize(function() {
-        $("#introspacer").css("height", $(window).innerHeight()+"px");
-        $(window).scroll();
-      }).resize();
-      $(window).scroll(function() {
-        if ($(window).scrollTop()>=$(window).innerHeight())
-          $(".fixedlogos").addClass("scrolled");
-        else
-          $(".fixedlogos").removeClass("scrolled");
-      }).scroll();
-      $(function() {
-        if ($("body").hasClass("skipintro"))
-          $("body,html").scrollTop($(window).innerHeight());
-      });
-    </script>
-        <div class="pagecontainer">
-      <div class="outercontainer">
-      <div class="innercontainer">
-        <div class="headerspacer" style="height: 143px;"></div><div class="headerbg"></div>
-        <header class="s12p fixedlogos">
-          <div class="logotop s12p">
-	    <div class="innercontainer">
-	      <div class="pl1p pr1p">
-		<h1><a href="http://www.hopkinsmedicine.org/" class="logo" target="_blank">Johns Hopkins School of Medicine</a></h1>
-		<p><a href="https://neuroscience.jhu.edu/" class="sologo">The Solomon H. Snyder Department of Neuroscience</a></p>
-	      </div>
-            </div>
-          </div>
-          <nav class="large ml1p mr1p s10p">
-            <div class="search"><form action="https://neuroscience.jhu.edu/search"><input type="text" name="q" placeholder="search"><button>Search</button></form></div>
-            <div class="mobilemenu"><a href="https://neuroscience.jhu.edu/">Menu</a></div>
-            <ul>
-              <li class="">
-                <a href="https://neuroscience.jhu.edu/about">About</a>
-                <div>
-                  <div>
-                    <ul>
-                      <li class="active">
-                        <a href="https://neuroscience.jhu.edu/about">Welcome</a></li>
-                      <li class="">
-                        <a href="https://neuroscience.jhu.edu/about/our-history">Our history</a></li>
-                      <li class="">
-                        <a href="https://neuroscience.jhu.edu/about/in-baltimore">In + around Baltimore</a></li>
-                    </ul>
-                    <ul>
-                      <li class="">
-                        <a href="https://neuroscience.jhu.edu/about/stories">Hopkins stories</a></li>
-                      <li class="">
-                        <a href="https://neuroscience.jhu.edu/about/contact">Contact</a></li>
-                      <li class="">
-                        <a href="https://neuroscience.jhu.edu/about/49">Brain Resilience Neuroscience Cluster Faculty Search</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              <li class="">
-                <a href="https://neuroscience.jhu.edu/research">Research+faculty</a>
-                <div>
-                  <div>
-                    <ul>
-                      <li class="">
-                        <a href="https://neuroscience.jhu.edu/research">Areas of Research</a>
-                        <ul>
-                          <li>
-                            <a href="https://neuroscience.jhu.edu/research/area/5">Neural Circuits, Ensembles + Connectomes</a></li>
-                          <li>
-                            <a href="https://neuroscience.jhu.edu/research/area/4">Developmental Neuroscience</a></li>
-                          <li>
-                            <a href="https://neuroscience.jhu.edu/research/area/3">Systems, Cognitive + Computational Neuroscience</a></li>
-                          <li>
-                            <a href="https://neuroscience.jhu.edu/research/area/2">Cellular + Molecular Neuroscience</a></li>
-                          <li>
-                            <a href="https://neuroscience.jhu.edu/research/area/1">Neurobiology of Disease</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <ul>
-                      <li class="">
-                        <a href="https://neuroscience.jhu.edu/research/faculty">Faculty profiles</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              <li class="">
-                <a href="https://neuroscience.jhu.edu/graduate">Grad program</a>
-                <div>
-                  <div>
-                    <ul>
-                      <li class="active">
-                        <a href="https://neuroscience.jhu.edu/graduate">Welcome</a></li>
-                      <li class="">
-                        <a href="https://neuroscience.jhu.edu/graduate/apply">How to Apply</a></li>
-                      <li class="">
-                        <a href="https://neuroscience.jhu.edu/graduate/curriculum">Curriculum</a></li>
-                      <li class="">
-                        <a href="https://neuroscience.jhu.edu/graduate/fellowships">Student + Postdoc Fellowships</a></li>
-                    </ul>
-                    <ul>
-                      <li class="">
-                        <a href="https://neuroscience.jhu.edu/graduate/student-directory">Student Directory</a></li>
-                      <li class="">
-                        <a href="https://neuroscience.jhu.edu/graduate/postdoc-directory">Postdoc Directory</a></li>
-                      <li class="">
-                        <a href="https://neuroscience.jhu.edu/graduate/alumni-directory">Alumni Directory</a></li>
-                    </ul>
-                    <ul>
-                      <li class="">
-                        <a href="https://neuroscience.jhu.edu/graduate/life-at-jhu">Life At JHU</a>
-                        <ul>
-                          <li>
-                            <a href="https://neuroscience.jhu.edu/graduate/life-at-jhu/1">Living in Baltimore</a></li>
-                          <li>
-                            <a href="https://neuroscience.jhu.edu/graduate/life-at-jhu/2">Recreation + Wellness</a></li>
-                          <li>
-                            <a href="https://neuroscience.jhu.edu/graduate/life-at-jhu/3">International Office</a></li>
-                        </ul>
-                      </li>
-                      <li class="">
-<!--                         <a href="/recruitment/outreachx">Recruitment and Outreach</a> -->
-                        <ul>
-                        </ul>
-                      </li>
-                      <li class="">
-                        <a href="https://neuroscience.jhu.edu/graduate/21">Graduate Program Resources</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              <li class="">
-                <a href="https://neuroscience.jhu.edu/recruitment">Recruitment+Outreach</a>
-                <div>
-                  <div>
-                    <ul>
-                      <li class="active">
-                        <a href="https://neuroscience.jhu.edu/recruitment">Recruitment initiatives</a></li>
-                      <li class="">
-                        <a href="https://neuroscience.jhu.edu/recruitment/outreach">Outreach at Hopkins Neuroscience</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              <li class="">
-                <a href="https://neuroscience.jhu.edu/resources">Resources</a>
-                <div>
-                  <div>
-                    <ul>
-                      <li class="active">
-                        <a href="https://neuroscience.jhu.edu/resources">Full Directory</a></li>
-                    </ul>
-                    <ul>
-                      <li class="">
-                        <a href="https://neuroscience.jhu.edu/resources/1">For Research</a>
-                        <ul>
-                          <li>
-                            <a href="https://neuroscience.jhu.edu/resources/6">Murine Mutagenesis Core</a></li>
-                          <li>
-                            <a href="https://neuroscience.jhu.edu/resources/3">Neuroscience Imaging Center (NIC)</a></li>
-                          <li>
-                            <a href="https://neuroscience.jhu.edu/resources/7">Neuroscience Machine Shop</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <ul>
-                      <li class="">
-                        <a href="https://neuroscience.jhu.edu/resources/2">For Faculty</a>
-                        <ul>
-                        </ul>
-                      </li>
-                      <li class="">
-                        <a href="https://neuroscience.jhu.edu/resources/8">For Postdoctoral Fellows</a>
-                        <ul>
-                        </ul>
-                      </li>
-                      <li class="">
-                        <a href="https://neuroscience.jhu.edu/resources/9">For Graduate Students</a>
-                        <ul>
-                        </ul>
-                      </li>
-                      <li class="">
-                        <a href="https://neuroscience.jhu.edu/resources/10">For Undergraduate Students</a>
-                        <ul>
-                        </ul>
-                      </li>
-                      <li class="">
-                        <a href="https://neuroscience.jhu.edu/resources/11">For Highschool Students</a>
-                        <ul>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              <li class="">
-                <a href="https://neuroscience.jhu.edu/news">News</a>
-              </li>
-              <li class="">
-                <a href="https://neuroscience.jhu.edu/events">Events</a>
-              </li>
-              <li class="">
-                <a href="https://neuroscience.jhu.edu/get-involved">Support</a>
-                <div>
-                  <div>
-                    <ul>
-                      <li class="">
-                        <a href="https://neuroscience.jhu.edu/get-involved/2">Support Neuroscience at Hopkins</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </nav>
-        </header>
-        <div class="wrapper" style="min-height: 452px;">
-        <section class="content homecontent" style="top: 0px;">
-          <div class="ml1p mr1p s10p">
-            <h2 data-html="Welcome&lt;a href=&quot;/about&quot;&gt;See more&lt;/a&gt;">Welcome<a href="https://neuroscience.jhu.edu/about">See more</a></h2>
-          </div>
-            <div class="welcomecontainer autoheight" style="line-height: 298px;">
-              <div class="fh"></div>
-              <div class="welcomequote">
-                <span class="quote">“</span>
-                <span class="qbody">One of the hallmarks of the Department of Neuroscience is the level of interaction and collaboration between laboratories and laboratories in other departments.</span>
-                <span class="quote">”</span>
-                <p class="signature">RICHARD HUGANIR, PhD, Director</p>
-              </div>
-              <ul>
-              <li style="opacity: 0;">
-                <img src="./src/18-1-1-425x284.jpg" alt="">
-              </li>
-              <li style="opacity: 0;">
-                <img src="./src/homepage2-1-425x284.jpg" alt="">
-              </li>
-              <li style="opacity: 0;">
-                <img src="./src/homepage3-1-425x284.jpg" alt="">
-              </li>
-              <li style="opacity: 1;">
-                <img src="./src/homepage4-1-425x284.jpg" alt="">
-              </li>
-              </ul>
-            </div>
-        </section>
-        </div>
-        <div class="wrapper" style="min-height: 829px;">
-        <section class="content homecontent" style="top: 0px;">
-          <div class="ml1p mr1p s10p">
-            <h2>Faculty Members<a href="https://neuroscience.jhu.edu/research/faculty">See more</a></h2>
-          </div>
-          <ul class="hmembers" style="min-height: 300px">
-            <li class="s3p autoheight" style="line-height: 338px;">
-              <div class="img">
-                <img src="./src/Opendak_Maya_headshot-1-370x370-bw.jpg">
-              </div>
-              <div class="info colblue " style="line-height: 338px;">
-                <div class="infocontainer">
-                  <span class="quote">“</span><!--
-               --><span class="qbody">How do we develop and adapt flexible strategies for interacting with others? </span><!--
-               --><span class="quote">”</span>
-                  <span class="name">Maya Opendak PhD</span>
-                  <span class="title">Assistant Professor of Neuroscience</span>
-                </div>
-              </div>
-              <a href="https://neuroscience.jhu.edu/research/faculty/158"></a>
-            </li>
-            <li class="s3p autoheight" style="line-height: 338px;">
-              <div class="img">
-                <img src="./src/BEN_0278-1-370x370-bw.jpg">
-              </div>
-              <div class="info colyellow primary" style="line-height: 338px;">
-                <div class="infocontainer">
-                  <span class="quote">“</span><!--
-               --><span class="qbody">We want to understand our learning and cognition by cells and synapses.</span><!--
-               --><span class="quote">”</span>
-                  <span class="name">Hyungbae Kwon PhD</span>
-                  <span class="title">Associate Professor of Neuroscience; Director of Admissions</span>
-                </div>
-              </div>
-              <a href="https://neuroscience.jhu.edu/research/faculty/143"></a>
-            </li>
-            <li class="s3p autoheight" style="line-height: 338px;">
-              <div class="img">
-                <img src="./src/Bergles-1-370x370-bw.jpg">
-              </div>
-              <div class="info colteal " style="line-height: 338px;">
-                <div class="infocontainer">
-                  <span class="quote">“</span><!--
-               --><span class="qbody">We investigate how neuron-glia interactions shape development, circuit function and disease progression.</span><!--
-               --><span class="quote">”</span>
-                  <span class="name">Dwight Bergles PhD</span>
-                  <span class="title">Professor of Neuroscience, Biomedical Engineering and Otolaryngology-Head &amp; Neck Surgery</span>
-                </div>
-              </div>
-              <a href="https://neuroscience.jhu.edu/research/faculty/6"></a>
-            </li>
-            <li class="s3p autoheight hover" style="line-height: 338px;">
-              <div class="img">
-                <img src="./src/Worley hi-res-1-370x370-bw.jpg">
-              </div>
-              <div class="info colviolet primary" style="line-height: 338px;">
-                <div class="infocontainer">
-                  <span class="quote">“</span><!--
-               --><span class="qbody">We study immediate early gene mediated plasticity in healthy and diseased brain.</span><!--
-               --><span class="quote">”</span>
-                  <span class="name">Paul Worley MD</span>
-                  <span class="title">Professor of Neuroscience</span>
-                </div>
-              </div>
-              <a href="https://neuroscience.jhu.edu/research/faculty/97"></a>
-            </li>
-            <li class="s3p autoheight" style="line-height: 338px;">
-              <div class="img">
-                <img src="./src/Goff hi-res-1-370x370-bw.jpg">
-              </div>
-              <div class="info colteal primary" style="line-height: 338px;">
-                <div class="infocontainer">
-                  <span class="quote">“</span><!--
-               --><span class="qbody">My lab studies the impact of long noncoding RNAs on the establishment and maintenance of distinct neuronal cell types.</span><!--
-               --><span class="quote">”</span>
-                  <span class="name">Loyal Goff PhD</span>
-                  <span class="title">Associate Professor of Neuroscience and Genetic Medicine </span>
-                </div>
-              </div>
-              <a href="https://neuroscience.jhu.edu/research/faculty/114"></a>
-            </li>
-            <li class="s3p autoheight" style="line-height: 338px;">
-              <div class="img">
-                <img src="./src/Pederick_Portrait_2025-01-1-370x370-bw.jpg">
-              </div>
-              <div class="info colviolet " style="line-height: 338px;">
-                <div class="infocontainer">
-                  <span class="quote">“</span><!--
-               --><span class="qbody">We study the mechanisms that organize neural circuits during development.</span><!--
-               --><span class="quote">”</span>
-                  <span class="name">Daniel Pederick PhD</span>
-                  <span class="title">Bloomberg Assistant Professor of Neuroscience; Assistant Professor of Otolaryngology-Head and Neck Surgery</span>
-                </div>
-              </div>
-              <a href="https://neuroscience.jhu.edu/research/faculty/177"></a>
-            </li>
-            <li class="s3p autoheight" style="line-height: 338px;">
-              <div class="img">
-                <img src="./src/Kirkwood hi-res-1-370x370-bw.jpg">
-              </div>
-              <div class="info colblue primary" style="line-height: 338px;">
-                <div class="infocontainer">
-                  <span class="quote">“</span><!--
-               --><span class="qbody">My lab tries to understand how sensory experience shapes cortical circuitry and function.</span><!--
-               --><span class="quote">”</span>
-                  <span class="name">Alfredo Kirkwood PhD</span>
-                  <span class="title">Professor of Neuroscience</span>
-                </div>
-              </div>
-              <a href="https://neuroscience.jhu.edu/research/faculty/42"></a>
-            </li>
-            <li class="s3p autoheight" style="line-height: 338px;">
-              <div class="img">
-                <img src="./src/WIN_20200102_16_01_34_Pro (4)-1-370x370-bw.jpg">
-              </div>
-              <div class="info colyellow " style="line-height: 338px;">
-                <div class="infocontainer">
-                  <span class="quote">“</span><!--
-               --><span class="qbody">We investigate how the hippocampus provides the contextual framework for episodic memories.</span><!--
-               --><span class="quote">”</span>
-                  <span class="name">James Knierim PhD</span>
-                  <span class="title">Professor of Neuroscience</span>
-                </div>
-              </div>
-              <a href="https://neuroscience.jhu.edu/research/faculty/43"></a>
-            </li>
-          </ul>
-        </section>
-        </div>
-        <div class="wrapper" style="min-height: 462px;">
-        <section class="content homecontent" style="width: 100%; top: 0px;">
-          <div class="s5p ml1p fleft relative">
-            <h2>Events<span class="mobblock-separator"></span><a href="https://neuroscience.jhu.edu/events">See events calendar</a></h2>
-            <div class="hcalcontainer">
-              <iframe width="430" height="308" style="border: 0; margin-top: -20px" src="./src/google-calendar.html"></iframe>
-<style>
-.gcal {
-  border: 0px;
-  max-width: 100%;
-}
-</style>
-            </div>
-          </div>
-          <div class="s5p mr1p fleft relative zindexgroup">
-            <h2>News<span class="mobblock-separator"></span><a href="https://neuroscience.jhu.edu/news">See news feed</a></h2>
-            <div class="hnewscontainer autoheight" style="line-height: 281px;">
-              <div class="imgcontainer">
-                <div><img src="./src/Hop-Coating-10-24-25-0271 AI-1-370x370.jpg"></div>
-                <a href="https://neuroscience.jhu.edu/news" class="cover"></a>
-              </div>
-              <div class="newsentry"><div>
-                <date>30 10 2025</date>
-                <h3>Neuroscience Graduate students receive their lab coats!</h3>
-                <a class="lnkmore" href="https://neuroscience.jhu.edu/news/269">Read more</a>
-              </div></div>
-            </div>
-            <a href="https://neuroscience.jhu.edu/news" class="cover"></a>
-          </div>
-          <div class="clear"></div>
-        </section>
-        </div>
-        <div class="wrapper" style="min-height: 604px;">
-        <section class="content homecontent" style="width: 100%; top: 0px;">
-          <div class="s10p ml1p mr1p">
-            <h2>Baltimore city<a href="https://neuroscience.jhu.edu/about/in-baltimore">See more</a></h2>
-          </div>
-          <div class="s12p hcity">
-            <ul>
-              <li class="info s4p fleft colviolet autoheightul2" style="line-height: 450px;">
-                <div class="infocc" style="display: none;">
-                  <div class="infocontainer">
-                    <span class="quote" style="display: inline">“</span>
-                    <span class="qbody" style="display: inline">The waterfront promenade is a great way to enjoy a sunny day in Baltimore. From Harborplace, you can walk east through lovely waterfront neighborhoods—Harbor East, Fells Point,Canton. Great watering holes, pubs, and coffee shops!</span>
-                    <span class="quote" style="display: inline">”</span>
-                    <span class="name" style="padding-top: 5px">Ronald Schnaar, Professor</span>
-                    <span class="title"></span>
-                  </div>
-                </div>
-                <div class="infocc" style="display: none;">
-                  <div class="infocontainer">
-                    <span class="quote" style="display: inline">“</span>
-                    <span class="qbody" style="display: inline">The Chesapeake Bay is one of the premier sailing areas in the world. I love sailing my boat and spending time on the water.</span>
-                    <span class="quote" style="display: inline">”</span>
-                    <span class="name" style="padding-top: 5px">Ernst Niebur, Professor</span>
-                    <span class="title"></span>
-                  </div>
-                </div>
-                <div class="infocc" style="display: block;">
-                  <div class="infocontainer">
-                    <span class="quote" style="display: inline">“</span>
-                    <span class="qbody" style="display: inline">I love the Crab Cake Cones from the Gypsy Queen (gypsyqueencafe.com) food truck when they’re on campus.</span>
-                    <span class="quote" style="display: inline">”</span>
-                    <span class="name" style="padding-top: 5px">Jenn Orthmann Murphy, MD, PhD (Postdoc, Bergles Lab)</span>
-                    <span class="title"></span>
-                  </div>
-                </div>
-              </li>
-              <li class="img s4p fleft"><div class="" style="position: static; left: 0px; top: 0px; width: 100%; transition: 0.5s; opacity: 0;"><img src="./src/1 colourful houses-1-428x428.jpg"></div>
-                <div class="imgshow" style="position: absolute; left: 0px; top: 0px; width: 100%; transition: 0.5s; opacity: 0;"><img src="./src/1 colourful houses-1-428x428.jpg"></div>
-                <div class="imgshow" style="position: absolute; left: 0px; top: 0px; width: 100%; transition: 0.5s; opacity: 0;"><img src="./src/2 oriole park-1-428x428.jpg"></div>
-                <div class="imgshow" style="position: absolute; left: 0px; top: 0px; width: 100%; transition: 0.5s; opacity: 0;"><img src="./src/baltimore-1-428x428.jpg"></div>
-                <div class="imgshow" style="position: absolute; left: 0px; top: 0px; width: 100%; transition: 0.5s; opacity: 1;"><img src="./src/4 park path-1-428x428.jpg"></div>
-                <div class="imgshow" style="position: absolute; left: 0px; top: 0px; width: 100%; transition: 0.5s; opacity: 0;"><img src="./src/5 cherry blossoms-1-428x428.jpg"></div>
-                <a href="https://neuroscience.jhu.edu/about/in-baltimore" class="fulloverlay"></a>
-              </li>
-              <li class="info s4p fleft colteal autoheightul2" style="line-height: 450px;">
-                <div class="infocc" style="display: none;">
-                  <div class="infocontainer">
-                    <span class="quote" style="display: inline">“</span>
-                    <span class="qbody" style="display: inline">The year-round ultimate frisbee leagues in Catonsville and the Neuroscience department softball team.</span>
-                    <span class="quote" style="display: inline">”</span>
-                    <span class="name" style="padding-top: 5px">Travis Faust, Graduate Student (Sawa Lab)</span>
-                    <span class="title"></span>
-                  </div>
-                </div>
-                <div class="infocc" style="display: none;">
-                  <div class="infocontainer">
-                    <span class="quote" style="display: inline">“</span>
-                    <span class="qbody" style="display: inline">I’m new here, so getting lost biking through Baltimore has been a great way to explore. The murals are beautiful. Also, it’s wonderful to be living in a city that is celebrated for their crab dishes—my favorite comfort food!</span>
-                    <span class="quote" style="display: inline">”</span>
-                    <span class="name" style="padding-top: 5px">Raina D’Aleo, Graduate Student</span>
-                    <span class="title"></span>
-                  </div>
-                </div>
-                <div class="infocc" style="display: block;">
-                  <div class="infocontainer">
-                    <span class="quote" style="display: inline">“</span>
-                    <span class="qbody" style="display: inline">Each neighborhood in Baltimore has a unique personality offering a variety of affordable food options. I love the charcuterie selection at Trinacria and Parts &amp; Labor.</span>
-                    <span class="quote" style="display: inline">”</span>
-                    <span class="name" style="padding-top: 5px">Wendy Xin, Graduate Student (Bonci Lab)</span>
-                    <span class="title"></span>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <a href="https://neuroscience.jhu.edu/about/in-baltimore" class="fulloverlay"></a>
-          </div>
-        </section>
-        </div>
-        <div class="clear"></div>
-        <div class="footer-spacer"></div>
-        <div class="footer-wrapper">
-        <footer class="ml1p mr1p s10p">
-          <div class="tools">
-            <p><a href="http://www.hopkinsmedicine.org/Privacy/index.html" target="_blank">Privacy</a></p>
-            <p class="login"><a href="https://neuroscience.jhu.edu/login">Login<i class="login"></i></a></p>
-            <p><a href="https://neuroscience.jhu.edu/">Back to top<i class="top"></i></a></p>
-          </div>
-          <div class="social"><a href="https://neuroscience.jhu.edu/" class="tw">Twitter</a><a href="https://neuroscience.jhu.edu/" class="fb">Facebook</a></div>
-          <div class="info">
-            <p>© 2025 NeuroCafé</p>
-            <p>Powered by <a target="_blank" href="https://mnili.ir">mnili</a> @ <a target="_blank" href="https://neuromorfix.ir">NeuroMorFix Group</a></p>
-          </div>
-        </footer>
-        </div>
-      </div>
-    </div>
-      </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>NEUROCAFE •  University of Tehran Neuroscience Community</title>
     
+    <!-- Fonts & Libraries -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="./src/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <style>
+        /* ----- Base Styles ----- */
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background-color: #0B0B0D;
+            color: #F5F5F0;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        
+        .heading-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            line-height: 0.95;
+        }
 
-</body></html>
+        .section {
+            padding-top: 110px;
+            padding-bottom: 110px;
+        }
+
+        .container {
+            max-width: 1380px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .nav-link {
+            font-size: 13px;
+            letter-spacing: 1.2px;
+            transition: color 0.2s ease;
+        }
+        .nav-link:hover {
+            color: #F5F5F0;
+        }
+
+        .quote-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .speaker-img {
+            transition: filter 0.5s ease, transform 0.4s ease;
+            filter: grayscale(100%);
+        }
+        .speaker-img:hover {
+            filter: grayscale(0%);
+            transform: scale(1.02);
+        }
+
+        /* ----- INTRO OVERLAY (fully custom, human‑like typing) ----- */
+        #intro-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #050505;
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            backdrop-filter: blur(2px);
+            transition: opacity 1.8s cubic-bezier(0.23, 1, 0.32, 1);
+            opacity: 1;
+            font-family: 'Inter', monospace;
+            overflow: hidden;
+        }
+        
+        /* neural network background (gentle moving connections) */
+        .neuro-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            opacity: 0.4;
+        }
+        
+        .neuron-dot {
+            position: absolute;
+            background: rgba(100, 150, 255, 0.4);
+            border-radius: 50%;
+            filter: blur(1px);
+            animation: pulseDot 3s infinite alternate;
+        }
+        
+        @keyframes pulseDot {
+            0% { opacity: 0.2; transform: scale(1);}
+            100% { opacity: 0.8; transform: scale(1.2);}
+        }
+        
+        .neuron-line {
+            position: absolute;
+            background: linear-gradient(90deg, rgba(80,120,255,0.3), rgba(160,180,255,0.1));
+            height: 2px;
+            transform-origin: 0 0;
+            border-radius: 2px;
+        }
+        
+        .intro-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            max-width: 900px;
+            width: 90%;
+            padding: 2rem;
+        }
+        
+        .neuro-logo {
+            font-size: 3.5rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            background: linear-gradient(135deg, #FFFFFF 0%, #9ca3ff 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: gentleFadeIn 1s ease forwards;
+        }
+        
+        @keyframes gentleFadeIn {
+            to { opacity: 1; transform: translateY(0);}
+            from { opacity: 0; transform: translateY(12px);}
+        }
+        
+        .typewriter-container {
+            font-size: 1.7rem;
+            font-weight: 450;
+            line-height: 1.5;
+            color: #f0f0f0;
+            text-shadow: 0 0 8px rgba(0,0,0,0.5);
+            min-height: 240px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .typed-line {
+            display: block;
+            margin: 0.5rem 0;
+            font-weight: 400;
+            letter-spacing: -0.2px;
+            backdrop-filter: blur(4px);
+            background: rgba(10,10,20,0.4);
+            padding: 0.5rem 1.2rem;
+            border-radius: 60px;
+            display: inline-block;
+        }
+        
+        .cursor {
+            display: inline-block;
+            width: 3px;
+            height: 1.5rem;
+            background-color: #aaccff;
+            vertical-align: middle;
+            margin-left: 4px;
+            animation: blink 0.9s step-end infinite;
+        }
+        
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        
+        .skip-intro {
+            position: absolute;
+            bottom: 32px;
+            right: 32px;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255,255,255,0.25);
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            color: #ddd;
+            cursor: pointer;
+            transition: 0.2s;
+            z-index: 20;
+            font-weight: 500;
+        }
+        
+        .skip-intro:hover {
+            background: rgba(255,255,255,0.25);
+            color: white;
+        }
+        
+        @media (max-width: 700px) {
+            .typewriter-container { font-size: 1.2rem; }
+            .typed-line { font-size: 1rem; }
+            .neuro-logo { font-size: 2.4rem; }
+        }
+        
+        /* welcome container styles (from previous combined version) */
+        .welcomecontainer {
+            position: relative;
+            min-height: 480px;
+            background: #0B0B0D;
+            border-radius: 28px;
+            overflow: hidden;
+            margin: 2rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background: linear-gradient(135deg, #0F0F13 0%, #08080A 100%);
+            border: 1px solid rgba(255,255,255,0.06);
+            box-shadow: 0 25px 40px -20px rgba(0,0,0,0.5);
+        }
+        
+        .welcomequote {
+            flex: 1.2;
+            padding: 3rem 2.5rem;
+            position: relative;
+            z-index: 10;
+            backdrop-filter: blur(2px);
+        }
+        
+        .welcomequote .quote {
+            font-family: 'Playfair Display', serif;
+            font-size: 6rem;
+            font-weight: 700;
+            color: rgba(255,255,255,0.2);
+            line-height: 1;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 0.25rem;
+        }
+        
+        .welcomequote .qbody {
+            font-size: 1.65rem;
+            font-weight: 450;
+            line-height: 1.45;
+            color: #F5F5F0;
+            display: inline-block;
+            max-width: 85%;
+            letter-spacing: -0.2px;
+        }
+        
+        .signature {
+            margin-top: 1.8rem;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #9CA3AF;
+            border-left: 2px solid #3b82f6;
+            padding-left: 1rem;
+        }
+        
+        .slider-area {
+            flex: 1;
+            position: relative;
+            min-height: 440px;
+            background: #00000020;
+            border-radius: 24px;
+            margin: 1rem;
+            overflow: hidden;
+            box-shadow: 0 0 0 1px rgba(255,255,255,0.05);
+        }
+        
+        .slider-list {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .slider-list li {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: opacity 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+            opacity: 0;
+            list-style: none;
+        }
+        
+        .slider-list li img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            filter: brightness(0.92) contrast(1.05);
+        }
+        
+        .slider-list li.active-slide {
+            opacity: 1;
+            z-index: 2;
+        }
+        
+        .slider-dots {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 15;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .slider-dots span {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 10px;
+            background: rgba(255,255,255,0.4);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .slider-dots span.active-dot {
+            width: 28px;
+            background: #ffffff;
+            box-shadow: 0 0 6px rgba(255,255,255,0.6);
+        }
+        
+        @media (max-width: 900px) {
+            .welcomecontainer { flex-direction: column; }
+            .welcomequote .qbody { font-size: 1.35rem; }
+            .slider-area { width: calc(100% - 2rem); min-height: 320px; }
+            .container { padding-left: 24px; padding-right: 24px; }
+            .section { padding-top: 70px; padding-bottom: 70px; }
+        }
+
+                /* Speakers Grid - modern card style */
+        .speakers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 2rem;
+        }
+        
+        .speaker-card {
+            background: #0F0F13;
+            border-radius: 28px;
+            overflow: hidden;
+            transition: transform 0.25s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.05);
+            backdrop-filter: blur(2px);
+        }
+        
+        .speaker-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 25px 35px -18px rgba(0,0,0,0.6);
+            border-color: rgba(255,255,255,0.15);
+        }
+        
+        .speaker-img-wrapper {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            background: #08080A;
+        }
+        
+        .speaker-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%);
+            transition: filter 0.5s ease, transform 0.4s ease;
+        }
+        
+        .speaker-card:hover .speaker-img {
+            filter: grayscale(0%);
+            transform: scale(1.02);
+        }
+        
+        .speaker-quote {
+            padding: 1.8rem 1.8rem 2rem 1.8rem;
+            color: white;
+            position: relative;
+            background: linear-gradient(145deg, rgba(20,25,45,0.9) 0%, rgba(12,15,30,0.95) 100%);
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .quote-mark {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1;
+            color: rgba(255,255,255,0.25);
+            display: inline-block;
+            margin-right: 0.2rem;
+        }
+        
+        .quote-text {
+            font-size: 1.1rem;
+            line-height: 1.45;
+            margin: 0.5rem 0 0.8rem 0;
+            display: inline;
+            font-weight: 400;
+            letter-spacing: -0.2px;
+        }
+        
+        .speaker-name {
+            font-weight: 700;
+            font-size: 1.05rem;
+            margin-top: 1.2rem;
+            letter-spacing: -0.2px;
+            color: #F5F5F0;
+        }
+        
+        .speaker-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #9CA3AF;
+            margin-top: 0.3rem;
+        }
+        
+        @media (max-width: 780px) {
+            .speakers-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .quote-text {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========== INTRO OVERLAY (human‑like typewriter, neural ambiance, once only) ========== -->
+    <div id="intro-overlay">
+        <!-- dynamic neural background -->
+        <div class="neuro-bg" id="neuro-bg"></div>
+        <div class="intro-content">
+            <div class="neuro-logo">⚡ NEUROCAFE</div>
+            <div class="typewriter-container" id="typewriter"></div>
+        </div>
+        <div class="skip-intro" id="skipIntroBtn">⟶  Skip introduction</div>
+    </div>
+
+    <!-- ========== MAIN WEBSITE (Neurocafe modern + welcome container & slider) ========== -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#0B0B0D]/95 backdrop-blur-xl border-b border-white/10">
+        <div class="container">
+            <div class="flex items-center justify-between h-[76px]">
+                <div class="flex items-center">
+                    <img src="src/neurocafe_logo.png" alt="Neuro Café" class="h-9 w-auto opacity-90">
+                </div>
+                <nav class="hidden md:flex items-center gap-x-9 text-sm">
+                    <a href="#about" class="nav-link uppercase text-[#9CA3AF] hover:text-white">About</a>
+                    <a href="#speakers" class="nav-link uppercase text-[#9CA3AF] hover:text-white">Speakers</a>
+                    <a href="#events" class="nav-link uppercase text-[#9CA3AF] hover:text-white">Events</a>
+                    <a href="#journal" class="nav-link uppercase text-[#9CA3AF] hover:text-white">Journal</a>
+                    <a href="#community" class="nav-link uppercase text-[#9CA3AF] hover:text-white">Community</a>
+                </nav>
+                <div class="flex items-center">
+                    <img src="src/nbic_logo.png" alt="NBIC" class="h-8 w-auto opacity-80">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO with Brain & Gradient Overlay (the one that will remain after intro) -->
+    <section class="relative min-h-[100dvh] flex items-center justify-center bg-black pt-16 overflow-hidden">
+        <div class="absolute inset-0 flex items-center justify-center opacity-90">
+            <img src="brain.png" class="w-full h-full object-cover opacity-80 brightness-75">
+            
+        </div>
+        <!-- this is the overlay that will "take place" after intro vanishes -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80"></div>
+        <div class="container relative z-10 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-[92px] md:text-[110px] font-bold tracking-[-7px] leading-none mb-6 text-white">NEUROCAFE</h1>
+                <p class="text-2xl md:text-3xl tracking-tight text-white/90 max-w-lg mx-auto mb-12">A Community for Neuroscience,<br>Curiosity &amp; Conversation</p>
+                  <a href="https://t.me/Neuro_cafe_UT"target="_blank"rel="noopener noreferrer"class="inline-flex items-center gap-x-3 border border-white/50 px-9 py-4 text-sm uppercase tracking-[2px] hover:bg-white hover:text-black transition">Join us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT + WELCOME container (Inspired by version2) -->
+    <section id="about" class="section bg-[#0B0B0D]">
+        <div class="container">
+            <div class="max-w-6xl mx-auto">
+                <div class="mb-8 text-center md:text-left"><span class="text-sm uppercase tracking-[3px] text-blue-400/70">Where minds meet science</span></div>
+                <div class="welcomecontainer">
+                    <div class="welcomequote">
+                        <span class="quote">“</span>
+                        <span class="qbody">Neuro cafe where minds meet science ☕️ <br> Join us for an interdisciplinary journey into the brain.</span>
+                        <span class="quote">”</span>
+                        <p class="signature">Neuro Cafe Team</p>
+                    </div>
+                    <div class="slider-area">
+    <ul class="slider-list" id="neuroSliderList" style="position: relative; width: 100%; height: 100%; min-height: 380px;">
+        <li><img src="src/slider/_DSC0369.JPG" alt="Research"></li>
+        <li><img src="src/slider/_DSC0349.JPG" alt="Neuroscience"></li>
+        <li><img src="src/slider/_DSC0359.JPG" alt="Brain"></li>
+        <li><img src="src/slider/_DSC0375.JPG" alt="Interdisciplinary"></li>
+        <li><img src="src/slider/_DSC0380.JPG" alt="Neuro art"></li>
+        <li><img src="src/slider/_DSC0384.JPG" alt="Neuro session"></li>
+    </ul>
+    <div class="slider-dots" id="sliderDots"></div>
+</div>
+                </div>
+                <div class="max-w-3xl mx-auto mt-12 text-center">
+                    <p class="text-[17px] leading-relaxed text-[#F5F5F0]/80">Neurocafe is an interdisciplinary community at the University of Tehran that brings together researchers, students, clinicians, and curious minds through thoughtful discussions, workshops, and intimate gatherings exploring the brain and human experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPEAKERS SECTION (modern grid inspired by faculty members) -->
+    <section id="speakers" class="section bg-[#111315]">
+        <div class="container">
+            <div class="flex justify-between items-end mb-12">
+                <h2 class="text-[42px] font-bold tracking-[-1.2px]">Session Leaders</h2>
+                <a href="#" class="text-sm uppercase tracking-widest hover:underline text-[#9CA3AF] hover:text-white transition">View all →</a>
+            </div>
+            
+            <div class="speakers-grid">
+                <!-- Speaker 1 - Maya Opendak -->
+                <div class="speaker-card">
+                    <div class="speaker-img-wrapper">
+                        <img src="./src/Opendak_Maya_headshot-1-370x370-bw.jpg" alt="Maya Opendak" class="speaker-img">
+                    </div>
+                    <div class="speaker-quote bg-blue-900/80">
+                        <span class="quote-mark">“</span>
+                        <p class="quote-text">NeuroCafe is for everyone. </p>
+                        <span class="quote-mark">”</span>
+                        <div class="speaker-name">Alireza Mahdavi, PhD student</div>
+                        <div class="speaker-title">Co-Funder of NeuroCafe</div>
+                    </div>
+                </div>
+
+                <!-- Speaker 3 - Dwight Bergles -->
+                <div class="speaker-card">
+                    <div class="speaker-img-wrapper">
+                        <img src="./src/Bergles-1-370x370-bw.jpg" alt="Dwight Bergles" class="speaker-img">
+                    </div>
+                    <div class="speaker-quote bg-teal-900/80">
+                        <span class="quote-mark">“</span>
+                        <p class="quote-text">NeuroCafe is where you can take an interdisciplinary journey into the brain.</p>
+                        <span class="quote-mark">”</span>
+                        <div class="speaker-name">Mohammad Reza Aboulghasemi Dehaqani, PhD</div>
+                        <div class="speaker-title">Professor of Neuroscience and Artificial Intelligence at the University of Tehran</div>
+                    </div>
+                </div>
+
+                                <!-- Speaker 8 - James Knierim -->
+                <div class="speaker-card">
+                    <div class="speaker-img-wrapper">
+                        <img src="./src/WIN_20200102_16_01_34_Pro (4)-1-370x370-bw.jpg" alt="James Knierim" class="speaker-img">
+                    </div>
+                    <div class="speaker-quote bg-yellow-900/80">
+                        <span class="quote-mark">“</span>
+                        <p class="quote-text">NeuroCafe is the best way to be introduced to neuroscience.</p>
+                        <span class="quote-mark">”</span>
+                        <div class="speaker-name">Farideh Shakerian, PhD</div>
+                        <div class="speaker-title">Postdoctoral Fellow at IPM</div>
+                    </div>
+                </div>
+
+                <!-- Speaker 4 - Paul Worley -->
+                <div class="speaker-card">
+                    <div class="speaker-img-wrapper">
+                        <img src="./src/Worley hi-res-1-370x370-bw.jpg" alt="Paul Worley" class="speaker-img">
+                    </div>
+                    <div class="speaker-quote bg-purple-900/80">
+                        <span class="quote-mark">“</span>
+                        <p class="quote-text">NeuroCafe is the first platform to open an interdisciplinary perspective on neuroscience.</p>
+                        <span class="quote-mark">”</span>
+                        <div class="speaker-name">Mohammad Reza Aghanouri, PhD</div>
+                        <div class="speaker-title">Assistant Professor of Neuroscience at NIGEB</div>
+                    </div>
+                </div>
+
+
+
+                <!-- Speaker 6 - Daniel Pederick -->
+                <div class="speaker-card">
+                    <div class="speaker-img-wrapper">
+                        <img src="./src/Pederick_Portrait_2025-01-1-370x370-bw.jpg" alt="Daniel Pederick" class="speaker-img">
+                    </div>
+                    <div class="speaker-quote bg-purple-900/80">
+                        <span class="quote-mark">“</span>
+                        <p class="quote-text">NeuroCafe is a bridge between industry and education.</p>
+                        <span class="quote-mark">”</span>
+                        <div class="speaker-name">Amir Fakhimi, MD</div>
+                        <div class="speaker-title">Co-founder of Actin Health </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="section bg-[#0B0B0D]"><div class="container"><div class="flex justify-between items-end mb-10"><h2 class="text-[42px] font-bold tracking-[-1.2px]">Upcoming Sessions</h2><a href="#" class="text-sm uppercase tracking-widest hover:underline">Full calendar →</a></div>
+    <div class="divide-y divide-white/10"><div class="grid md:grid-cols-12 gap-x-8 py-7 items-center"><div class="md:col-span-3 text-sm text-[#9CA3AF]">Comming Soon . . .</div><div class="md:col-span-6"><div class="font-semibold text-xl tracking-tight">Neuro Cafe summer school </div><div class="text-[#9CA3AF] mt-0.5">Computational neuroscience</div></div><div class="md:col-span-3 mt-4 md:mt-0 md:text-right"><a href="#" class="text-sm uppercase tracking-widest hover:underline">Registration details →</a></div></div>
+    
+</section>
+
+    <section id="journal" class="section bg-[#111315]"><div class="container"><div class="flex justify-between items-end mb-10"><h2 class="text-[42px] font-bold tracking-[-1.2px]">From the Journal</h2><a href="#" class="text-sm uppercase tracking-widest hover:underline">Browse all →</a></div>
+    <div class="grid md:grid-cols-2 gap-x-16 gap-y-10"><div><div class="uppercase text-xs tracking-[1.5px] text-[#9CA3AF] mb-2">12 JANUARY 2026</div><h3 class="text-2xl font-semibold tracking-tight mb-3">The Hidden Role of Astrocytes in Memory Formation</h3><p class="text-[#9CA3AF] mb-4">Recent work reveals that glial cells play an active role in shaping episodic memory circuits.</p><a href="#" class="text-sm uppercase tracking-widest hover:underline">Read the paper →</a></div>
+    <div><div class="uppercase text-xs tracking-[1.5px] text-[#9CA3AF] mb-2">3 DECEMBER 2025</div><h3 class="text-2xl font-semibold tracking-tight mb-3">How Social Experience Rewires the Developing Brain</h3><p class="text-[#9CA3AF] mb-4">Critical developmental windows shape social behavior circuits in the prefrontal cortex.</p><a href="#" class="text-sm uppercase tracking-widest hover:underline">Read the paper →</a></div></div></div></section>
+
+    <section id="community" class="section bg-[#0B0B0D]"><div class="container"><div class="max-w-2xl mb-10"><h2 class="text-[42px] font-bold tracking-[-1.2px]">Inside Neurocafe</h2><p class="mt-3 text-[#F5F5F0]/80">Moments from our gatherings, conversations, and intellectual life.</p></div><div class="grid grid-cols-2 md:grid-cols-4 gap-4"><img src="src/talk_1.jpg" class="w-full h-100 object-cover"><img src="src/talk_2.jpg" class="w-full h-100 object-cover"><img src="src/NEURO CAFE 2.jpg" class="w-full h-100 object-cover"><img src="src/online1 nc.jpg" class="w-full h-100 object-cover"></div></div></section>
+
+    <section class="section bg-[#111315] text-center"><div class="container"><h2 class="text-6xl font-bold tracking-[-2px] mb-6">Join the Conversation</h2><p class="max-w-md mx-auto text-[#F5F5F0]/80 mb-8">Become part of a community that believes great science happens between people.</p><a href="#" class="inline-block px-10 py-4 border border-white text-sm uppercase tracking-[2px] hover:bg-white hover:text-black transition">Become a Member</a></div></section>
+
+    <footer class="bg-[#0B0B0D] border-t border-white/10 py-14 text-sm"><div class="container"><div class="flex flex-col md:flex-row justify-between gap-y-10"><div><div class="flex items-center gap-x-3 mb-4"><img src="src/neurocafe_logo.png" class="h-7 w-auto opacity-80"><span class="text-xs text-[#9CA3AF]">University of Tehran Initiative</span></div></div><div class="flex gap-x-10 text-[#9CA3AF]"><div><a href="#" class="block hover:text-white">Events</a><a href="#" class="block hover:text-white">Journal</a></div><div><a href="#" class="block hover:text-white">Speakers</a><a href="#" class="block hover:text-white">Community</a></div><div class="space-x-4"><a href="https://t.me/Neuro_cafe_UT" class="hover:text-white"><i class="fab fa-telegram"></i></a></a><a href="https://www.instagram.com/utneurocafe?igsh=MmMzc2ZsMTltaWJ5" class="hover:text-white"><i class="fab fa-instagram"></i></a></div></div></div><div class="mt-12 pt-8 border-t border-white/10 text-xs text-[#9CA3AF] flex justify-between"><div>© 2026 Neurocafe • University of Tehran</div><div>Privacy • Back to top</div></div></div></footer>
+
+    <script>
+        // ========== 1. INTRO ANIMATION (Human‑like typewriter, neural background, once only) ==========
+        (function() {
+            // check sessionStorage to avoid replaying intro if already seen
+            if (sessionStorage.getItem('neuro_intro_completed') === 'true') {
+                // intro already played this session → hide instantly
+                const overlay = document.getElementById('intro-overlay');
+                if (overlay) overlay.style.display = 'none';
+                return;
+            }
+            
+            const introLines = [
+                "Neuro Café begins",
+                "with individual laboratories",
+                "doing cutting edge science",
+                "training students",
+                "in a culture of rich interactions and collaborations",
+                "at all universities with world-renowned expertise",
+                "revolutionizing interdisciplinary research",
+                "to answer the big questions in neuroscience"
+            ];
+            
+            const typewriterContainer = document.getElementById('typewriter');
+            let lineIndex = 0;
+            let charIndex = 0;
+            let currentLineElement = null;
+            let isDeleting = false;
+            let typingSpeed = 70;      // ms per character (human pace)
+            let endOfLinePause = 800;   // pause after each full line
+            
+            function createLineElement() {
+                const div = document.createElement('div');
+                div.className = 'typed-line';
+                typewriterContainer.appendChild(div);
+                return div;
+            }
+            
+            function typeNext() {
+                if (lineIndex >= introLines.length) {
+                    // all lines typed completely → animation finished
+                    setTimeout(finishIntroAndFadeOut, 1400);
+                    return;
+                }
+                
+                if (!currentLineElement) {
+                    currentLineElement = createLineElement();
+                }
+                
+                const fullText = introLines[lineIndex];
+                if (!isDeleting) {
+                    // typing forward
+                    if (charIndex < fullText.length) {
+                        currentLineElement.textContent = fullText.substring(0, charIndex + 1);
+                        charIndex++;
+                        let dynamicSpeed = typingSpeed + (Math.random() * 25 - 12); // natural variation
+                        setTimeout(typeNext, dynamicSpeed);
+                    } else {
+                        // line fully typed, pause then move to next line
+                        isDeleting = false;
+                        charIndex = 0;
+                        lineIndex++;
+                        currentLineElement = null;
+                        setTimeout(typeNext, endOfLinePause);
+                    }
+                }
+            }
+            
+            // start the typewriter
+            function startTypewriter() {
+                lineIndex = 0;
+                charIndex = 0;
+                isDeleting = false;
+                currentLineElement = null;
+                typewriterContainer.innerHTML = '';
+                typeNext();
+            }
+            
+            function finishIntroAndFadeOut() {
+                const overlay = document.getElementById('intro-overlay');
+                if (!overlay) return;
+                overlay.style.opacity = '0';
+                // after fade transition, remove overlay and set session flag
+                setTimeout(() => {
+                    overlay.style.display = 'none';
+                    sessionStorage.setItem('neuro_intro_completed', 'true');
+                    // optional: remove leftover background artifacts
+                }, 1800);
+            }
+            
+            // skip intro handler
+            const skipBtn = document.getElementById('skipIntroBtn');
+            if (skipBtn) {
+                skipBtn.addEventListener('click', () => {
+                    finishIntroAndFadeOut();
+                });
+            }
+            
+            // generate neural background dots & lines (elegant, human-made feel)
+            function generateNeuralBackground() {
+                const bgContainer = document.getElementById('neuro-bg');
+                if (!bgContainer) return;
+                bgContainer.innerHTML = '';
+                const w = window.innerWidth;
+                const h = window.innerHeight;
+                // create 40 random floating dots
+                for (let i = 0; i < 48; i++) {
+                    const dot = document.createElement('div');
+                    dot.className = 'neuron-dot';
+                    const size = 4 + Math.random() * 18;
+                    dot.style.width = size + 'px';
+                    dot.style.height = size + 'px';
+                    dot.style.left = Math.random() * w + 'px';
+                    dot.style.top = Math.random() * h + 'px';
+                    dot.style.animationDuration = 3 + Math.random() * 5 + 's';
+                    dot.style.animationDelay = Math.random() * 4 + 's';
+                    bgContainer.appendChild(dot);
+                }
+                // some connecting lines (subtle)
+                for (let i = 0; i < 35; i++) {
+                    const line = document.createElement('div');
+                    line.className = 'neuron-line';
+                    const x1 = Math.random() * w;
+                    const y1 = Math.random() * h;
+                    const x2 = x1 + (Math.random() - 0.5) * 240;
+                    const y2 = y1 + (Math.random() - 0.5) * 200;
+                    const length = Math.hypot(x2 - x1, y2 - y1);
+                    const angle = Math.atan2(y2 - y1, x2 - x1) * 180 / Math.PI;
+                    line.style.width = length + 'px';
+                    line.style.left = x1 + 'px';
+                    line.style.top = y1 + 'px';
+                    line.style.transform = `rotate(${angle}deg)`;
+                    line.style.opacity = 0.18 + Math.random() * 0.3;
+                    line.style.background = `linear-gradient(90deg, rgba(100,150,255,0.4), rgba(170,200,255,0.05))`;
+                    bgContainer.appendChild(line);
+                }
+            }
+            
+            generateNeuralBackground();
+            window.addEventListener('resize', () => {
+                generateNeuralBackground();
+            });
+            
+            startTypewriter();
+        })();
+        
+        // ========== 2. IMAGE SLIDER FOR WELCOME SECTION (human‑pace fade) ==========
+        (function initSlider() {
+            const slides = document.querySelectorAll('#neuroSliderList li');
+            const dotsContainer = document.getElementById('sliderDots');
+            if (!slides.length || !dotsContainer) return;
+            let currentIdx = 0;
+            let intervalId = null;
+            const total = slides.length;
+            
+            function buildDots() {
+                dotsContainer.innerHTML = '';
+                for (let i = 0; i < total; i++) {
+                    const dot = document.createElement('span');
+                    dot.setAttribute('data-idx', i);
+                    if (i === 0) dot.classList.add('active-dot');
+                    dot.addEventListener('click', () => {
+                        if (intervalId) clearInterval(intervalId);
+                        goToSlide(i);
+                        startAutoSlide();
+                    });
+                    dotsContainer.appendChild(dot);
+                }
+            }
+            
+            function goToSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.style.opacity = '0';
+                    slide.classList.remove('active-slide');
+                });
+                slides[index].style.opacity = '1';
+                slides[index].classList.add('active-slide');
+                const dots = document.querySelectorAll('.slider-dots span');
+                dots.forEach((dot, i) => {
+                    if (i === index) dot.classList.add('active-dot');
+                    else dot.classList.remove('active-dot');
+                });
+                currentIdx = index;
+            }
+            
+            function nextSlide() {
+                let nxt = (currentIdx + 1) % total;
+                goToSlide(nxt);
+            }
+            
+            function startAutoSlide() {
+                if (intervalId) clearInterval(intervalId);
+                intervalId = setInterval(() => nextSlide(), 4300);
+            }
+            
+            // initialize
+            slides.forEach((s, idx) => {
+                if (idx === 0) {
+                    s.style.opacity = '1';
+                    s.classList.add('active-slide');
+                } else {
+                    s.style.opacity = '0';
+                    s.classList.remove('active-slide');
+                }
+            });
+            buildDots();
+            startAutoSlide();
+            
+            const sliderArea = document.querySelector('.slider-area');
+            if (sliderArea) {
+                sliderArea.addEventListener('mouseenter', () => { if (intervalId) clearInterval(intervalId); });
+                sliderArea.addEventListener('mouseleave', () => startAutoSlide());
+            }
+        })();
+        
+        // smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const target = document.querySelector(targetId);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
